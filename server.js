@@ -1,6 +1,6 @@
 "use strict";
 
-require('dotenv').config();
+
 
 var express      = require('express');
 var logger       = require('morgan');
@@ -19,6 +19,11 @@ var check        = 1440;
 var exp          = new Date(Date.now() + hour); 
 
 var tela1       = require('./tela-01/route');
+
+
+if (app.get('env') === 'development') {
+    require('dotenv').config();
+}
 
 app.use(helmet());
 
