@@ -1,0 +1,247 @@
+#modal{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+}
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,1.0); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255,255,255,0.5); 
+}
+.fw_modal_texto {
+    width: 91%;
+    font-size: 20px;
+    line-height: 24px;
+    overflow-y: scroll;
+    /* scrollbar-face-color: #b46868; */
+    overflow-x: hidden;
+    height: 92%;
+    padding-left: 2%;
+    padding-right: 3%;
+    top: 30px;
+    left: 2%;
+}
+.fw_modal_texto h1{
+    font-size:37px;
+    
+    font-family: 'Interstateregular';
+    word-wrap: break-word;
+}
+
+.fw_modal_texto p{
+    
+    word-wrap: break-word;
+    
+
+}
+
+.fw_modal_texto i{
+    font-family: 'interstateregularitalic';
+    word-wrap: break-word;
+}
+
+.fw_modal_texto h2{
+    
+    font-size: 18px;
+    font-family: 'Interstate-Bold';
+    word-wrap: break-word;
+}
+
+.fw_modal_texto span{
+    font-family: 'Interstate-Bold';
+    word-wrap: break-word;
+}
+    
+.fw_modal_texto h2 i{
+    font-family: 'Interstate-BoldItalic';
+    word-wrap: break-word;
+}
+
+.fw_modal_texto span i{
+    font-family: 'Interstate-BoldItalic';
+    word-wrap: break-word;
+}
+
+.fw_modal_texto > section {
+    border-bottom: solid white 1px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+
+
+}  
+
+
+.fw_modal_texto > section article{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+}    
+
+
+.fw_modal_texto > section > article > p {
+    font-size: 16px;
+    color: white;
+}    
+
+.fw_modal_texto > section > article > p > a{
+    color: white;
+    
+}    
+
+.fw_modal_texto > section > article > p > b{
+    font-family: 'Interstateregular';
+    font-weight: 900;
+
+}
+
+.fw_modal_texto > section > article > h1{
+    font-family: 'Interstateregular';
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.fw_modal_texto > section > article > h1 > b{
+    font-family: 'Interstate-Bold';
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.fw_modal_texto > section > .left{
+    width: 36%;
+    font-family: 'Interstateregular';
+    text-align: right;
+    font-weight: 900;
+    vertical-align: top;
+    line-height: 25px;
+}
+
+
+.fw_modal_texto > section > .right{
+    margin-left: 3%;
+    width: 60%;
+    font-family: 'Interstate-ExtraLight';
+    vertical-align: text-top;
+    line-height: 25px;
+
+}
+
+
+
+#modal {
+ font-size:25px;
+}
+#modal h1{
+    font-size:37px;
+    padding:20px;
+}
+#modal > #principal{
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    color:#fff;
+    width:750px;
+    height:700px;
+    display: block;
+    z-index: 11;
+    margin:auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;
+}
+#principal > p{
+    padding:40px;
+}
+#secundaria{
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    color:#fff;
+    width:750px;
+    height:700px;
+    display: none;
+    z-index: 11;
+    margin:auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;
+}
+#secundaria > p{
+    padding:40px;
+}
+#primaria > img{
+    width:160px;
+    height:60px;
+}
+#fw_btn_fechar_modal{
+    padding:10px;
+    font-size:20px;
+
+}
+.fw_modal {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    width: 920px;
+    height: 635px;
+    z-index: 10000;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    /* top: 30px; */
+    border-radius: 5px;
+    z-index: 10000;
+    /* padding: 15px; */
+}
+
+.fw_modal_texto{
+    position: absolute;
+    color: white;
+    
+}
+#fw_btn_fechar_modal{
+    background: url(../imgs/btn_fechar_modal.png)no-repeat;
+    right: -5%;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    color: rgb(39, 37, 37);
+    cursor: pointer;
+    /* padding: 10px; */
+    /* margin: 5px 15px; */
+
+}
+#fw_btn_fechar_modal p{
+
+
+}
+ /*
+    font-family: ;
+    right: 9px;
+    top: 6px;
+    font-weight: bold;
+    position:absolute;
+
+}
+*/

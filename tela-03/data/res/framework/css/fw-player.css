@@ -1,0 +1,682 @@
+/***************** video_control start *************/
+i{
+    font-family: interstatelightitalic;
+}
+/***Toda a barra de controle de video***/
+.fw_video_control{
+    position:absolute;
+    width:1024px;
+    bottom:0px;
+    height:58px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    z-index:9999;
+    -webkit-transform: translateZ(0)
+
+}
+.fw_video-control span {
+    font-size: 18px;
+    font-family: interstate_light;
+}
+
+/***Range  bar que aumenta de acordo com o tempo***/
+.fw_seek_bar_range{
+    position: absolute;
+    background: #E4D3D3;
+    height: 5px;
+    width: 34px;
+    left: 66px;
+    border-radius: 10px;
+    top: 20px;
+}
+/**tempo atual**/
+.fw_seek_line_now{
+    position: absolute;
+    font-size: 19px;
+    bottom: 17px;
+    left: 0;
+    color: white;
+}
+
+/**duracao**/
+.fw_seek_line_out{
+    position: absolute;
+    font-size: 19px;
+    bottom: 17px;
+    right: -50px;
+    color: white;
+}
+
+
+/*botão play da barra de controle de video */
+.fw_btn_play {
+    left: 40px;
+    position: absolute;
+    background: url(../imgs/btn_pause.png)no-repeat;
+    height: 26px;
+    width: 24px;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+.fw_btn_play.hover{
+    background: url(../imgs/btn_pause_hover.png)no-repeat;
+}
+
+.fw_btn_play.fw_off{
+    background: url(../imgs/btn_play.png)no-repeat;
+}
+
+.fw_btn_play.fw_off.hover{
+    background: url(../imgs/btn_play_hover.png)no-repeat;
+}
+
+/**botão mudo**/
+.fw_btn_mute {
+    right: 163px;
+    position: absolute;
+    background: url(../imgs/btn_audio.png)no-repeat;
+    height: 31px;
+    width: 35px;
+    position: absolute;
+    bottom: 13px;
+    cursor: pointer;
+}
+
+.fw_btn_mute.hover {
+    background: url(../imgs/btn_audio_hover.png)no-repeat;
+}
+
+.fw_btn_mute.fw_off {
+    background: url(../imgs/btn_sem_audio.png)no-repeat;
+}
+
+.fw_btn_mute.fw_off.hover {
+    background: url(../imgs/btn_sem_audio_hover.png)no-repeat;
+}
+
+
+
+/**botão de ativar e desativar legenda**/
+.fw_btn_legenda {/*sem imagem off*/
+    right: 83px;
+    position: absolute;
+    background: url(../imgs/btn_legenda.png)no-repeat;
+    height: 30px;
+    width: 40px;
+    bottom: 14px;
+    cursor:pointer;
+}
+
+.fw_btn_legenda.hover{
+    background: url(../imgs/btn_legenda_hover.png)no-repeat;
+}
+
+.fw_btn_legenda.fw_off{
+    background: url(../imgs/btn_sem_legenda.png)no-repeat;
+}
+
+
+.fw_btn_legenda.fw_off.hover{
+    background: url(../imgs/btn_sem_legenda_hover.png)no-repeat;
+}
+
+
+/**composta por toda a barra de tempo desde o tempo atual até a duração com a range bar no meio**/
+.fw_seek_line{
+    position: absolute;
+    left: 118px;
+    bottom: 3px;
+    height: 52px;
+    width: 635px;
+}
+
+/****range da seek line*****/
+.fw_seek_line input[type="range"]{
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    width: 500px;
+    border-radius: 2px;
+    left: 66px;
+}
+
+/**detalhes do range**/
+
+/***************** video_control end */
+
+
+/***************** *modal menu start *************/
+
+/***************** *modal end */
+
+
+/***************** *modal video start *************/
+
+.fw_modal_video_play.off{
+    position: absolute;
+    /*background: black;*/
+    width: 1024px;
+    height: 768px;
+    z-index: 9999;
+    display:block;
+}
+
+.fw_modal_video_play{
+    z-index: 9999;
+    position:absolute;
+    display:none;
+    height:768px;
+    width:1024px;
+    /*background-color:rgba(0,0,0,0.7);*/
+    text-align: center;
+    padding-top: 20px;
+}
+
+.fw_modal_video_play:after{
+    font-size: 22px;
+    color: white;
+    opacity: 0.3;
+    text-align: center;
+    content: "TOQUE/CLIQUE PARA CONTINUAR";
+}
+
+
+.fw_modal_video_play .fw_off{
+    display:block; !important
+}
+
+
+.fw_modal_video_play .fw_btn_pause{
+    z-index: 9999;
+    height: 140px;
+    cursor: pointer;
+    width: 120px;
+    left: 47%;
+    background: url(../imgs/pause_full.png)no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 328px;
+    opacity: 0.8;
+}
+
+.fw_modal_video_play .fw_btn_pause.hover{
+    background: url(../imgs/play_full.png)no-repeat;
+}
+.fw_modal_video_play > .fw_btn_pause.hover{
+    background: url(../imgs/play_full.png)no-repeat;
+}
+
+/***************** *modal end */
+
+
+
+/***************** *menu start *************/
+.fw_btn_menu {
+
+    right: 5px;
+    cursor:pointer;
+    position: absolute;
+    background: url(../imgs/btn_menu.png)no-repeat;
+    height: 58px;
+    width: 52px;
+    background-position: center;
+    background-position-y: 14px;
+    z-index: 2147483649;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0px;
+    border-radius: 0px;
+}.fw_btn_menu.hover{
+     background-color: rgba(0, 0, 0, 0.8);
+ }
+
+
+.fw_sub_menu{/*setar right:auto resulta em menu sem legenda(icone)*/
+    z-index: 2147483648;
+    display:none;
+    position:absolute;
+    bottom: 61px;
+    right:0px;
+    list-style:none;
+}
+
+.fw_sub_menu.hover{
+    display:block;
+}
+
+
+
+.fw_sub_menu li{
+    vertical-align: middle;
+    padding:13px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 200px;
+    height: 31px;
+    margin: 3px 0;
+    z-index: 9999;
+
+}
+
+
+div.tooltips {
+    text-align:center;
+    position: absolute;
+    display: inline;
+}
+div.tooltips span {
+    position: absolute;
+    font-size:12px;
+    width:100px;
+    color: #000000;
+    background:#FFFFFF;
+    height: 31px;
+    line-height: 30px;
+    text-align: center;
+    visibility: hidden;
+    box-shadow:3px 3px 5px black;
+}
+div.tooltips.fw_btn_menu span {
+    position: absolute;
+    font-size:12px;
+    width:50px;
+    color: #000000;
+    background:#FFFFFF;
+    height: 31px;
+    line-height: 30px;
+    text-align: center;
+    visibility: hidden;
+    box-shadow:3px 3px 5px black;
+}
+#lista_de_idiomas{
+    opacity:0;
+    height:0px;
+    margin-top:-27px;
+    overflow:hidden;
+    background:none;
+}
+#lista_de_idiomas ul{
+    position:relative;
+}
+div.hover.tooltips.fw_btn_menu span {
+    visibility: visible;
+    opacity: 0.8;
+    bottom: 58px;
+    left: 50%;
+    margin-left: -26px;
+    z-index: 999;
+}
+
+
+div.hover.tooltips.fw_btn_legenda span {
+
+    margin-left: -52px;
+}
+
+div.fw_btn_mute.tooltips span:before {
+    content:"DESLIGAR\00a0SOM";
+}
+div.fw_btn_legenda.tooltips span:before {
+    content:"LEGENDA";
+}
+div.fw_btn_legenda.fw_off.tooltips span:before {
+    content:"SEM\00a0LEGENDA";
+}
+div.fw_btn_mute.fw_off.tooltips span:before {
+    content:"LIGAR\00a0SOM";
+}
+
+div.tooltips span:after {
+    content: '';
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0; height: 0;
+    border-top: 9px solid #ffffff;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+
+}
+
+div.hover.tooltips span {
+    visibility: visible;
+    opacity: 0.8;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -51px;
+    z-index: 999;
+}
+
+.fw_sub_menu > li a {
+    color:white;
+    cursor:pointer;
+    text-decoration: none;
+    position: absolute;
+    height: 30px;
+    cursor: pointer;
+    font-family: interstateregular;
+    font-size: 23px; color:#fff;
+    padding:5px 3px;
+
+}
+
+.fw_sub_menu li a i {
+    margin-right: 36px;
+}
+.fw_sub_menu li{
+    top:30px;
+}
+
+.fw_btn_inicio{
+    background: url(../imgs/btn_inicio_m.png)no-repeat;
+
+}
+
+.fw_btn_inicio.hover{
+}
+
+
+.fw_btn_audio{
+    background: url(../imgs/btn_audio_m.png)no-repeat;
+}
+
+.fw_btn_audio.hover{
+    background: url(../imgs/btn_audio_m.png)no-repeat;
+}
+.fw_btn_audio.fw_off{
+    background: url(../imgs/btn_audio_off_m.png)no-repeat;
+}
+
+.fw_btn_audio.fw_off.hover{
+    background: url(../imgs/btn_audio_off_m.png)no-repeat;
+}
+
+
+.fw_btn_tela_cheia{
+    background: url(../imgs/btn_tela_cheia_m.png)no-repeat;
+
+}
+
+.fw_btn_tela_cheia.hover{
+    background: url(../imgs/btn_tela_cheia_off_m.png)no-repeat;
+}
+
+.fw_btn_tela_cheia.fw_off{
+    background: url(../imgs/btn_tela_cheia_off_m.png)no-repeat;
+}
+
+.fw_btn_tela_cheia.fw_off.hover{
+    background: url(../imgs/btn_tela_cheia_m.png)no-repeat;
+}
+
+
+.fw_btn_menu_idioma{
+    background: url(../imgs/ico_menu_legenda.png)no-repeat;
+}
+.fw_btn_menu_legenda{
+    background: url(../imgs/ico_menu_legenda.png)no-repeat;
+
+}.fw_btn_menu_legenda.fw_off{
+     background: url(../imgs/ico_menu_legenda.png)no-repeat;
+ }
+
+.fw_btn_menu_legenda.fw_off.hover{
+    background: url(../imgs/ico_menu_legenda.png)no-repeat;
+}
+
+.fw_btn_menu_legenda:after{
+    content:"LEGENDA";
+}
+.fw_btn_menu_legenda.fw_off:after{
+    content:"SEM\00a0LEGENDA";
+}
+
+.fw_btn_ajuda{
+    background: url(../imgs/btn_ajuda_m.png)no-repeat;
+}
+
+.fw_btn_inicio{
+    background: url(../imgs/btn_inicio_m.png)no-repeat;
+}
+
+.fw_btn_credito{
+    background: url(../imgs/btn_credito_m.png)no-repeat;
+}
+
+.fw_btn_fechar{
+    background: url(../imgs/btn_fechar_m.png)no-repeat;
+}
+
+
+
+/****************** menu end */
+
+/****************** legenda start *************/
+.fw_legenda {
+    z-index: 1;
+    bottom:-697px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:905px;
+    left: 60px;
+    right: 60px;
+    position: absolute;
+    text-align: center;
+    display: none;
+
+
+}
+#wrapper_legenda{
+    position: absolute;
+    width: 1024px;
+    display: block;
+    -webkit-transform: translateZ(0);
+    height: 0px;
+}
+.fw_legenda > p {
+
+    display: none;
+    background: rgba(0,0,0,0.7);
+    color: #E5E31E;
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    line-height: 30px;
+    -ms-box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-transform: translateZ(0);
+}
+
+sup{
+    vertical-align: super;
+    font-size: smaller;
+}
+
+sub { 
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+.modal_final {
+    text-align:center;
+}
+
+.item_menu.hover{
+    background:#00A0CA;
+}
+
+.fw_btn_menu.fw_off span{
+    display:none;
+}
+
+.fw_btn_menu {
+    display:none;
+    -webkit-transform: translateZ(0);
+}
+#seekcontrol{
+    border-radius: 2px;
+    width: 550px;
+    height:8px;
+    background-color: rgba(128, 128, 128, 0.100);
+    overflow:hidden;
+    position: absolute;
+    -webkit-transform: translateZ(0);
+}
+#seekbar{
+    width: 550px;
+    height:8px;
+    border-radius: 2px;
+    top: 21px;
+    left: 66px;
+    position: absolute;
+    cursor:pointer;
+    -webkit-transform: translateZ(0);
+
+}
+
+#playbar {
+    background: #ffffff;
+    cursor: pointer;
+    border-radius:30px;
+    height: 8px;
+    border: 2px;
+    width: 0;
+    -webkit-transform: translateZ(0)
+}
+#scrubber{
+    cursor:pointer;
+    position:absolute;
+    background:#FFFFFF;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 1);
+    -moz-box-shadow:    0px 0px 2px 2px rgba(0, 0, 0, 1);
+    box-shadow:         0px 0px 2px 2px rgba(0, 0, 0, 0.7);
+    width:20px;
+    height:20px;
+    border-radius:20px;
+    top:-6px;
+    -webkit-transform: translateZ(0)
+
+}
+#menu-video{
+    -webkit-transform: translateZ(0)
+}
+#init-menu{
+    -webkit-transform: translateZ(0)
+}
+#lista_de_idiomas ul li a{
+    background: rgba(108,109,112, 0.8);
+    width: inherit;
+    color: white;
+    font-size: 18px;
+    height: auto;
+    padding: 10px 50px;
+    line-height: 12px;
+}
+#lista_de_idiomas ul{
+    margin-left:-10px;
+}
+#lista_de_idiomas ul li{
+    padding: 27px 0px;
+    background: inherit;
+    line-height: 0px;
+    height: auto;
+    margin-top: -24px;
+}
+
+#lista_de_idiomas > ul > li.hover > a{
+    background:#00A0CA;
+}
+
+
+.fw_hl_logo{
+    content: "";
+    background: url(../imgs/hl_logo_pequeno.png)no-repeat;
+    background-position: right;
+    background-size: 33%;
+    width: auto;
+    height: 98px;
+}
+
+/******** Animação Pause *********/
+.fw_btn_pause{
+  animation: pause-animation ease-out 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: pause-animation ease-in-out 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: pause-animation ease-in-out 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: pause-animation ease-in-out 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: pause-animation ease-in-out 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes pause-animation{
+  0% {
+    transform:  translate(-25px,-25px)  scaleX(1.00) scaleY(1.00) ;
+    opacity:1;
+  }
+  100% {
+    transform:  translate(-30px,-30px)  scaleX(1.50) scaleY(1.50) ;
+    opacity:0;
+  }
+}
+
+@-moz-keyframes pause-animation{
+  0% {
+    -moz-transform:  translate(-25px,-25px)  scaleX(1.00) scaleY(1.00) ;
+    opacity:1;
+  }
+  100% {
+    -moz-transform:  translate(-30px,-30px)  scaleX(1.50) scaleY(1.50) ;
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes pause-animation {
+  0% {
+    -webkit-transform:  translate(-25px,-25px)  scaleX(1.00) scaleY(1.00) ;
+    opacity:1;
+  }
+  100% {
+    -webkit-transform:  translate(-30px,-30px)  scaleX(1.50) scaleY(1.50) ;
+    opacity:0;
+  }
+}
+
+@-o-keyframes pause-animation {
+  0% {
+    -o-transform:  translate(-25px,-25px)  scaleX(1.00) scaleY(1.00) ;
+    opacity:1;
+  }
+  100% {
+    -o-transform:  translate(-30px,-30px)  scaleX(1.50) scaleY(1.50) ;
+    opacity:0;
+  }
+}
+
+@-ms-keyframes pause-animation {
+  0% {
+    -ms-transform:  translate(-25px,-25px)  scaleX(1.00) scaleY(1.00) ;
+    opacity:1;
+  }
+  100% {
+    -ms-transform:  translate(-30px,-30px)  scaleX(1.50) scaleY(1.50) ;
+    opacity:0;
+  }
+}

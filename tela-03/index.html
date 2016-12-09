@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<base href="/tela-03/" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Live | Interação com vídeo</title>
+</head>
+<body>
+
+<!-- Style do Framework -->
+<link rel="stylesheet" href="data/res/framework/css/framework.css">
+<!-- Style do Framework -->
+
+<!--Libs em Java Scripts-->
+
+<script src="data/res/jquery-1.11.2.min.js"></script>
+<script src="data/res/howler.min.js"></script>
+<script src="data/res/prefixfree.min.js"></script>
+<script src="data/res/CSSPlugin.min.js"></script>
+<script src="data/res/jquery.base64.js"></script>
+<script src="data/res/EasePack.js"></script>
+<script src="data/res/TweenLite.js"></script>
+<script src="data/res/TimelineLite.js"></script>
+<script src="data/res/PxLoader.js"></script>
+<script src="data/res/PxLoaderImage.js"></script>
+<!--Libs em Java Scripts-->
+
+
+<!--Java Scripts do Framework -->
+<script src="data/res/framework/framework.js"></script>
+<script src="data/res/framework/preloader.js"></script>
+<!--Java Scripts do Framework -->
+
+<!-- Style da peça -->
+<link rel="stylesheet" href="css/style.css" media="screen" type="text/css"/>
+<link rel="stylesheet" href="css/tab-abas2.css" media="screen" type="text/css"/>
+<!-- Style da peça -->
+
+
+<!--Java Scripts da Peça -->
+<script src="js/animacoes.js"></script>
+<script src="fw_config.js"></script>
+<script src="js/init.js"></script>
+<script src="legenda.js"></script>
+<!--Java Scripts da Peça -->
+
+<section id="preloader">
+  <div class="wrp">
+  	<div class="bar n1 jumping"></div>
+  	<div class="bar n2 jumping"></div>
+  	<div class="bar n3 jumping"></div>
+  	<div class="bar n4 jumping"></div>
+  	<div class="bar n5 jumping"></div>
+  	<div class="bar n6 jumping"></div>
+  	<div class="bar n7 jumping"></div>
+  	<div class="bar n8 jumping"></div>
+  	<div class="bar n9 jumping"></div>
+  </div>
+	<div id="brand">
+		<div id="bx-1">
+			<div class="white-box"></div>
+			<div class="content-box">
+				<div id="h"></div>
+			</div>
+			<div class="white-box2"></div>
+		</div>
+
+		<div id="bx-2">
+			<div class="white-box"></div>
+			<div class="content-box">
+				<div id="l"></div>
+			</div>
+			<div class="white-box2"></div>
+		</div>
+	</div>
+	<div id="counter">
+		0%
+	</div>
+</section>
+
+<div id="fw_fundo">
+
+	<div id="fw_preloader">
+
+		<div id="fw_capa">
+			<div class="fw_footer">
+				As imagens deste conteúdo são representações meramente ilustrativas, fora de escala e/ou com cores-fantasia.
+			</div>
+		    <div id="fw_titulo">
+		        <h1>
+		            Hero Live<br />Interação com vídeo
+		        </h1>
+		        <div id="fw_btn_iniciar_objeto">
+		            <span class="arrow_right"></span>
+		        </div>
+
+		    </div>
+		</div>
+
+	</div>
+</div>
+
+  <!--</div>-->
+	<div id="content">
+		<video id="video" width="1024" height="768"></video>
+		<audio id="audio"></audio>
+		<div class="tempo-do-video">
+			<div class="time">Funcionou : <span>ativado</span></div>
+			<div>Current Time : <span  id="currentTime">0</span></div>
+			<div>Total time : <span id="totalTime">0</span></div>
+		</div>
+		<div id="tab-abas">
+			<h2>Línguas indígenas do Brasil por número de falantes</h2>
+			<ul class="abas-nav">
+				<li id="aba_1"><a class="azul">Mais de 5 mil</a></li>
+				<li id="aba_2"><a class="roxo">Entre mil e 4999</a></li>
+				<li id="aba_3"><a class="verde">Entre 400 e 999</a></li>
+				<li id="aba_4"><a class="amarelo">Entre 100 e 399</a></li>
+				<li id="aba_5"><a class="rosa">Menos de 100</a></li>
+			</ul>
+			<div class="info-linguas">
+			</div>
+			<p class="descricao">lorem ipsun</p>
+			<ul class="zoom">
+				<li class="aumentar"></li>
+				<li class="diminuir"></li>
+			</ul>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			/*cria lista com bolinhas*/
+
+			$("#tab-abas").hide();
+			var $current = $("#currentTime"),
+				$video = $("#content"),
+				$total = $("#totalTime"),
+				$tab_abas = $("#tab-abas"),
+				$nav_abas = $(".abas-nav"),
+				$box = $(".info-linguas"),
+				cor_aba = $(".abas-nav li:first").find("a").attr("class");
+
+			$.ajax({
+				url: "js/description.json",
+				dataType: "json"
+			})
+			.done(function (data) {
+				// cria a listagem de todos os circulos
+				$.each(data, function(i, obj) {
+					var key =  obj.key;
+					$box.append('<h3 data-title="' + obj.title + '" data-key="' + key + '" class="desc-' + key + '">' + obj.text_title + '</h3><ul class="' + key + '" />');
+
+					var $list = $box.find("." + key);
+					$.each(obj.info, function(idx, info) {
+						var css = info.style;
+						$list.append('<li style="left: '+ css.left +'px; top: '+ css.top +'px; width: '+ css.size +'px; height: '+ css.size +'px;"><span style="background-color: '+ css.color +'" /><div class="info"><i class="close" /><strong>Língua:</strong> ' + info.language + '<br /><strong>N° de falantes:</strong> ' + info.description + '<br /><strong>Família linguística:</strong> ' + info.family + '</div></li>');
+					});
+				});
+			});
+
+			$("#fw_btn_iniciar_objeto").on("click", function(){
+				$(function(){
+					$current.html($video.find('video').get(0).load());
+					$current.html($video.find('video').get(0).play());
+				})
+				setInterval(function(){
+					var sTime = $current.html(),
+						fTime = $total.html();
+					$current.html($video.find('video').get(0).currentTime);
+					$total.html($video.find('video').get(0).duration);
+					if(sTime == fTime)
+						$("#content").addClass("abas-ativa")
+					
+						
+					//console.log(sTime);
+				},500);
+			});
+			//funcionalidade de abas
+			$tab_abas
+				.addClass(cor_aba);
+			$nav_abas
+				.find("li:first").addClass("ativo");
+
+			$nav_abas
+				.on("click", "a", function(){
+					var class_aba = $(this).attr("class"),
+						id_aba = $(this).parent().attr("id"),
+						descText = $(".info-linguas .desc-"+id_aba).text();
+					$tab_abas.removeClass().addClass(class_aba);
+					$nav_abas.find("li.ativo").removeClass();
+					$(this).parent().addClass("ativo");
+					$(".info-linguas ul").removeClass("ativado").fadeOut(0);
+					$(".info-linguas ul."+id_aba).addClass("ativado").fadeIn(150);
+					$("#tab-abas p.descricao").text(descText);
+			});
+			
+			$(".zoom .aumentar").on("click", function(){
+				$(".info-linguas .ativado li").each(function(){
+					var boxsize = parseInt($(this).width())+20,
+						posX = parseInt($(this).css("left"))+10,
+						posY = parseInt($(this).css("top"))-10;
+					$(this)
+						.css({"width": + boxsize + "px","height": + boxsize + "px","top": + posY + "px","left": + posX + "px"});
+				});
+			});
+			
+			$(".zoom .diminuir").on("click", function(){
+				$(".info-linguas .ativado li").each(function(){
+					var boxsize = parseInt($(this).width())-20,
+						posX = parseInt($(this).css("left"))-10,
+						posY = parseInt($(this).css("top"))+10;
+					$(this)
+						.css({"width": + boxsize + "px","height": + boxsize + "px","top": + posY + "px","left": + posX + "px"});
+				});
+			});
+
+	  	});
+		$(window).load(function(){
+			$(".info-linguas ul.aba_1")
+				.addClass("ativado");
+
+			var descText = $(".info-linguas .desc-aba_1").text();
+			$("#tab-abas p.descricao").text(descText);
+
+			$(".info-linguas ul li")
+				.on("click", "span", function(){
+					$("li.open").removeClass();
+					$(this).parent().addClass("open");
+			});
+
+			$(".info-linguas ul li")
+				.on("click",".close", function(){
+					$("li.open").removeClass();
+			});
+		})
+	 </script>
+</body>
+</html>

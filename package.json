@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "latest",
+    "express-session": "latest",
+    "body-parser": "latest",
+    "dotenv": "latest",
+    "cookie-parser": "latest",
+    "morgan": "latest",
+    "helmet": "latest"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www"
+  },
+  "author": "",
+  "license": "ISC"
+}

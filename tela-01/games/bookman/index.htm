@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<!--<html lang="en">-->
+<html lang="en" manifest="cache.manifest">
+<head>
+	<base href="/tela-01/games/bookman/" />
+	<meta charset="utf-8" />
+	<title>Prototipo Bookman</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="pacman-canvas.css">
+	
+	<!-- site icons -->
+	<link rel="shortcut icon" href="img/Icon-130x130.png" />
+	<link rel="apple-touch-icon" href="img/Icon-130x130.png" />
+
+	<!-- Mobile Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	
+	<!-- Apple Mobile Web Capability -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<!-- Script -->
+	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script src="js/jquery.hammer.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+<div class="main">
+
+
+<!-- Mensagem caso Javascript esteja desativado -->
+<noscript>
+<h2>Habilite o Javascript!</h2>
+<p>Este jogo em HTML 5 requer Javascript para rodar. Por favor cheque se o Javascript está habilitado em seu navegador.</p>
+</noscript>
+
+<!-- main game content-->
+<div class="content" id="game-content">
+	
+	<!-- main game wrapper -->
+	<div class="game wrapper">
+		
+		<div class="controlSound">
+			<img src="img/audio-icon-mute.png" id="mute">
+		</div>
+		<!-- canvas is splitted into 18x13 fields -->
+		<div id="canvas-container">
+			<div id="canvas-overlay-container">
+				<div id="canvas-overlay-content">
+					<div id="title">Bookman, o caçador de palavras</div>
+					<div><p id="text">Vamos jogar?</p></div>
+				</div>
+			</div>
+			<canvas id="myCanvas" width="540" height="390">
+			<p>Canvas não suportado</p>
+			</canvas>
+		</div>
+		
+		<!-- Game Menu -->		
+		<div class="controls" id="menu-buttons">
+			<ul>
+				<li class="button" id="newGame">Novo Jogo</li>
+			</ul>
+		</div>
+		<!-- Game Menu End -->
+		
+	</div>
+		
+	<div class="description nomobile">
+		<span id="audio">
+			<audio id="theme" preload="auto">
+				<source src="wav/theme.wav" type="audio/wav">
+				<source src="mp3/theme.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="waka" preload="auto">
+				<source src="wav/waka.wav" type="audio/wav">
+				<source src="mp3/waka.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="die" preload="auto">
+				<source src="wav/die.wav" type="audio/wav">
+				<source src="mp3/die.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="powerpill" preload="auto">
+				<source src="wav/powerpill.wav" type="audio/wav">
+				<source src="mp3/powerpill.mp3" type="audio/mpeg">
+			</audio>
+		</span>
+	</div>
+
+</div>
+</div>
+</div>
+
+	<script src="pacman-canvas.js" type="text/javascript"></script>
+
+
+</body>
+</html>
