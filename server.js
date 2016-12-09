@@ -17,9 +17,6 @@ var hour         = 3600000;
 var check        = 1440;
 var exp          = new Date(Date.now() + hour); 
 
-var tela1       = require('./tela-01/route');
-
-
 if (app.get('env') === 'development') {
     require('dotenv').config();
 }
