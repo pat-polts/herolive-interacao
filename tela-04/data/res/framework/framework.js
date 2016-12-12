@@ -320,6 +320,7 @@ var oeds = {
         if (mostrarBarraDeControle){
             $(".fw_video_control").css('display','block');
         }
+        console.log(idElemento);
         this.legendaAPI._posicaoLegendaAtual=0;
         this._animacaoAPI._posicaoAnimacaoAtual=0;
         this._animacaoAPI._animacoes = animacoes;
@@ -348,7 +349,7 @@ var oeds = {
              if(oeds.legendaAPI._isLegendaAtivada){
                 $("#legenda").css('display','none');    
             }
-            callback();
+            // callback();
         });
 
         this._mediaChannel.on('timeupdate',function(){

@@ -41,47 +41,39 @@ app.use(
   })
 ); 
 
-
+            //Tela 01 src files
+            app.use('/tela-01', express.static(path.join(__dirname, '/tela-01'))); 
+            app.use('/tela-01/css', express.static(path.join(__dirname, '/tela-01/css'))); 
+            app.use('/tela-01/data', express.static(path.join(__dirname, '/tela-01/data'))); 
+            app.use('/tela-01/games', express.static(path.join(__dirname, '/tela-01/games'))); 
+            app.use('/tela-01/js', express.static(path.join(__dirname, '/tela-01/js'))); 
+    
+            //Tela 03 src files
+            app.use('/tela-03', express.static(path.join(__dirname, '/tela-03'))); 
+            app.use('/tela-03/css', express.static(path.join(__dirname, '/tela-03/css'))); 
+            app.use('/tela-03/data', express.static(path.join(__dirname, '/tela-03/data'))); 
+            app.use('/tela-03/games', express.static(path.join(__dirname, '/tela-03/games'))); 
+            app.use('/tela-03/js', express.static(path.join(__dirname, '/tela-03/js'))); 
+   
+            //Tela 04 src files
+            app.use('/tela-04', express.static(path.join(__dirname, '/tela-04'))); 
+            app.use('/tela-04/css', express.static(path.join(__dirname, '/tela-04/css'))); 
+            app.use('/tela-04/data', express.static(path.join(__dirname, '/tela-04/data')));  
+            app.use('/tela-04/js', express.static(path.join(__dirname, '/tela-04/js')));
+   
 
 
 app.use('/', function(req, res){  
  
   switch(req.originalUrl){
       case '/tela01' :
-
-        //Tela 01 src files
-        app.use('/tela-01', express.static(path.join(__dirname, '/tela-01'))); 
-        app.use('/tela-01/css', express.static(path.join(__dirname, '/tela-01/css'))); 
-        app.use('/tela-01/data', express.static(path.join(__dirname, '/tela-01/data'))); 
-        app.use('/tela-01/games', express.static(path.join(__dirname, '/tela-01/games'))); 
-        app.use('/tela-01/js', express.static(path.join(__dirname, '/tela-01/js'))); 
-
-        //carrega inde tela 1
-        res.sendFile(path.resolve(path.join(__dirname, 'tela-01/index.html') ));
-
+         res.sendFile(path.resolve(path.join(__dirname, 'tela-01/index.html') )); 
       break;
       case '/tela03' :
-
-        //Tela 03 src files
-        app.use('/tela-03', express.static(path.join(__dirname, '/tela-03'))); 
-        app.use('/tela-03/css', express.static(path.join(__dirname, '/tela-03/css'))); 
-        app.use('/tela-03/data', express.static(path.join(__dirname, '/tela-03/data'))); 
-        app.use('/tela-03/games', express.static(path.join(__dirname, '/tela-03/games'))); 
-        app.use('/tela-03/js', express.static(path.join(__dirname, '/tela-03/js'))); 
-
          res.sendFile(path.resolve(path.join(__dirname, 'tela-03/index.html') )); 
-
       break;
       case '/tela04' :
-
-        //Tela 04 src files
-        app.use('/tela-04', express.static(path.join(__dirname, '/tela-04'))); 
-        app.use('/tela-04/css', express.static(path.join(__dirname, '/tela-04/css'))); 
-        app.use('/tela-04/data', express.static(path.join(__dirname, '/tela-04/data')));  
-        app.use('/tela-04/js', express.static(path.join(__dirname, '/tela-04/js'))); 
-
          res.sendFile(path.resolve(path.join(__dirname, 'tela-04/index.html') )); 
-         
       break;
       default :
         res.sendFile(path.resolve(path.join(__dirname, 'index.html') )); 

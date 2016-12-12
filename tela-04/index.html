@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<base href="/tela-01/" />
+	<base href="/tela-04/" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hero Live | Interação com vídeo</title>
@@ -104,19 +104,36 @@
 
   <!--</div>-->
 	<div id="content">
+		<div class="instrumentos">
+			<img src="data/imgs/instrumento1-placeholder.png" id="audio1" />
+			<img src="data/imgs/instrumento2-placeholder.png" id="audio2" />
+			<img src="data/imgs/instrumento3-placeholder.png" id="audio3" />
+		
+		</div>
 		<video id="video" width="1024" height="768"></video>
 		<audio id="audio"></audio>
+			<audio id="instrumentoA">
+				<source src="data/audios/01_01_f_0001a_AJI5_M17_CD.mp3" type="audio/mpeg" > 
+				Your browser does not support the audio element.
+			</audio>
+			<audio id="instrumentoB"> 
+				<source src="data/audios/01_01_f_0001b_AJI5_M17_CD.mp3" type="audio/mpeg"> 
+				Your browser does not support the audio element.
+			</audio>
+			<audio id="instrumentoC"> 
+				<source src="data/audios/01_01_f_0001c_AJI5_M17_CD.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
 		<div class="tempo-do-video">
 			<div class="time">Funcionou : <span>ativado</span></div>
 			<div>Current Time : <span  id="currentTime">0</span></div>
 			<div>Total time : <span id="totalTime">0</span></div>
 		</div>
 		<div id="tab-abas">	
-			<iframe src="games/bookman/index.htm" scrolling="no"></iframe>
+			<p>fim!</p>
 		</div>
 	</div>
-	<script>
-	console.log(111);
+	<script> 
 		$(function(){
 			/*cria lista com bolinhas*/
 
@@ -136,14 +153,31 @@
 				// cria a listagem de todos os circulos
 				$.each(data, function(i, obj) {
 					var key =  obj.key;
-					$box.append('<h3 data-title="' + obj.title + '" data-key="' + key + '" class="desc-' + key + '">' + obj.text_title + '</h3><div class="rjmosaic group ' + key + '" />');
+					// $box.append('<h3 data-title="' + obj.title + '" data-key="' + key + '" class="desc-' + key + '">' + obj.text_title + '</h3><div class="rjmosaic group ' + key + '" />');
 
 					var $list = $box.find("." + key);
-					$.each(obj.info, function(idx, info) {
-						var css = info.style;
-						$list.append('<div class="rjmosaic__item" style="width: '+ css.size +'px; height: '+ css.size +'px;"><span style="background-color: '+ css.color +';" /><div class="info"><i class="close" /><strong>Língua:</strong> ' + info.language + '<br /><strong>N° de falantes:</strong> ' + info.description + '<br /><strong>Família linguística:</strong> ' + info.family + '</div></div>');
-					});
+					// $.each(obj.info, function(idx, info) {
+					// 	var css = info.style;
+					// 	$list.append('<div class="rjmosaic__item" style="width: '+ css.size +'px; height: '+ css.size +'px;"><span style="background-color: '+ css.color +';" /><div class="info"><i class="close" /><strong>Língua:</strong> ' + info.language + '<br /><strong>N° de falantes:</strong> ' + info.description + '<br /><strong>Família linguística:</strong> ' + info.family + '</div></div>');
+					// });
 				});
+			});
+			$("#audio1").on("click", function(){
+				console.log("audio 1");
+				var instrumento = $('#instrumentoA').get(0);
+				console.log(instrumento.play());
+				return !instrumento.play(); 
+				 
+			});
+			$("#audio2").on("click", function(){
+				console.log("audio 2");
+				$('#instrumentoB').get(0).play();
+				return false;
+			});
+			$("#audio3").on("click", function(){
+				console.log("audio 3");
+				$('#instrumentoC').get(0).play();
+				return false;
 			});
 
 			$("#fw_btn_iniciar_objeto").on("click", function(){
@@ -151,14 +185,18 @@
 					$current.html($video.find('video').get(0).load());
 					$current.html($video.find('video').get(0).play());
 				})
+				$(".instrumentos").hide();
 				setInterval(function(){
 					var sTime = $current.html(),
 						fTime = $total.html();
 					$current.html($video.find('video').get(0).currentTime);
 					$total.html($video.find('video').get(0).duration);
 					if(sTime == fTime)
-						$("#content").addClass("abas-ativa")
-					//console.log(sTime);
+						$("#content").addClass("abas-ativa") 
+					if(Math.round(sTime) == 3){
+						$current.html($video.find('video').get(0).pause());
+						$(".instrumentos").show();
+					}
 				},500);
 			});
 			//funcionalidade de abas
@@ -169,35 +207,15 @@
 
 			$nav_abas
 				.on("click", "a", function(){
-					var class_aba = $(this).attr("class"),
-						id_aba = $(this).parent().attr("id"),
-						descText = $(".info-linguas .desc-"+id_aba).text();
-					$tab_abas.removeClass().addClass(class_aba);
-					$nav_abas.find("li.ativo").removeClass();
-					$(this).parent().addClass("ativo");
-					$(".info-linguas .rjmosaic").removeClass("ativado").fadeOut(0);
-					$(".info-linguas div."+id_aba).addClass("ativado").fadeIn(150);
-					$("#tab-abas p.descricao").text(descText);
+			//
 			});
 			
 			$(".zoom .aumentar").on("click", function(){
-				$(".info-linguas .ativado .rjmosaic__item").each(function(){
-					var boxsize = parseInt($(this).width())+20,
-						posX = parseInt($(this).css("left"))+0,
-						posY = parseInt($(this).css("top"))-0;
-					$(this)
-						.css({"width": + boxsize + "px","height": + boxsize + "px","top": + posY + "px","left": + posX + "px"});
-				});
+				//
 			});
 			
 			$(".zoom .diminuir").on("click", function(){
-				$(".info-linguas .ativado .rjmosaic__item").each(function(){
-					var boxsize = parseInt($(this).width())-20,
-						posX = parseInt($(this).css("left"))-0,
-						posY = parseInt($(this).css("top"))+0;
-					$(this)
-						.css({"width": + boxsize + "px","height": + boxsize + "px","top": + posY + "px","left": + posX + "px"});
-				});
+			//
 			});
 
 	  	});
