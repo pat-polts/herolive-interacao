@@ -43,6 +43,7 @@
 <script src="js/animacoes.js"></script>
 <script src="fw_config.js"></script>
 <script src="js/init.js"></script>
+<script src="js/instrumentos.js"></script>
 <script src="legenda.js"></script>
 <!--Java Scripts da Peça -->
 
@@ -137,7 +138,6 @@
 	</div>
 	<script> 
 		$(function(){
-			var playing = false; //
 
 			/*cria lista com bolinhas*/
 
@@ -167,18 +167,6 @@
 				});
 			});
 
-			$(".instrumentos > img").on("click", function(){
-				playing         = !playing;
-				var elId        = '#' + this.id;
-				var instrumento = $('audio'+elId).get(0);
-
-				if(playing){
-					return !instrumento.play(); 
-				}else{
-					return !instrumento.pause(); 
-				}
-				 
-			}); 
 
 			$("#fw_btn_iniciar_objeto").on("click", function(){
 				$(function(){

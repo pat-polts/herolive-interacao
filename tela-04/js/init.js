@@ -9,4 +9,6 @@ $(document).ready(function(){
         //carregarAssetsMedia:function(pacoteDeLegendas,animacoes, idElemento,mostrarBarraDeControle, callback){
         oeds.carregarAssetsMedia(legendas,[],'video',true);
     });
+
+    
 });
