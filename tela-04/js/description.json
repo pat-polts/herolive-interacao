@@ -1,0 +1,2160 @@
+[
+	{
+		"title": "Aba 1",
+		"key": "aba_1",
+		"text_title": "Lorem ipsum et num lorem",
+		"info": [
+			{
+				"language": "Abcd - 1",
+				"family": "Abcd 1",
+				"description": "30 mil",
+				"style": {
+					"color": "#477da7",
+					"left": "40",
+					"top": "40",
+					"size": "100"
+				}
+			},
+			{
+				"language": "Kaingáng",
+				"family": "Jê",
+				"description": "28 mil",
+				"style": {
+					"color": "#f0c431",
+					"left": "750",
+					"top": "310",
+					"size": "87"
+				}
+			},
+			{
+				"language": "Makuxí",
+				"family": "Karíb",
+				"description": "23500",
+				"style": {
+					"color": "#4a4a4a",
+					"left": "110",
+					"top": "340",
+					"size": "74"
+				}
+			},
+			{
+				"language": "Teréna",
+				"family": "Aruák",
+				"description": "20 mil",
+				"style": {
+					"color": "#e58935",
+					"left": "610",
+					"top": "410",
+					"size": "65"
+				}
+			},
+			{
+				"language": "Guajajára",
+				"family": "Tupí-Guaraní",
+				"description": "19.5 mil",
+				"style": {
+					"color": "#569947",
+					"left": "500",
+					"top": "120",
+					"size": "63"
+				}
+			},
+			{
+				"language": "Yanomámi",
+				"family": "Yanomámi",
+				"description": "15.7 mil",
+				"style": {
+					"color": "#9d5519",
+					"left": "300",
+					"top": "70",
+					"size": "50"
+				}
+			},
+			{
+				"language": "Língua Geral Amazônica",
+				"family": "(Falada pelos Baré, Baníwa e outros povos no NW do Amazonas)",
+				"description": "15 mil",
+				"style": {
+					"color": "#e16ef4",
+					"left": "110",
+					"top": "200",
+					"size": "48"
+				}
+			},
+			{
+				"language": "Xavánte ",
+				"family": "Jê",
+				"description": "12.9 mil",
+				"style": {
+					"color": "#e17070",
+					"left": "630",
+					"top": "90",
+					"size": "45"
+				}
+			},
+			{
+				"language": "Mundurukú",
+				"family": "Mundurukú",
+				"description": "10 mil",
+				"style": {
+					"color": "#5b4d41",
+					"left": "310",
+					"top": "250",
+					"size": "38"
+				}
+			},
+			{
+				"language": "Kokáma",
+				"family": "mista",
+				"description": "9.5 mil",
+				"style": {
+					"color": "#d7ae7e",
+					"left": "390",
+					"top": "450",
+					"size": "35"
+				}
+			},
+			{
+				"language": "Múra",
+				"family": "Múra",
+				"description": "9.3 mil",
+				"style": {
+					"color": "#ce4045",
+					"left": "270",
+					"top": "400",
+					"size": "33"
+				}
+			},
+			{
+				"language": "Mawé",
+				"family": "Mawé",
+				"description": "8.4 mil",
+				"style": {
+					"color": "#acffef",
+					"left": "430",
+					"top": "350",
+					"size": "28"
+				}
+			},
+			{
+				"language": "Xakriabá ",
+				"family": "Jê",
+				"description": "7.7 mil",
+				"style": {
+					"color": "#e9ff70",
+					"left": "510",
+					"top": "240",
+					"size": "22"
+				}
+			},
+			{
+				"language": "Wapixána",
+				"family": "Aruák",
+				"description": "6.850 mil",
+				"style": {
+					"color": "#f0c431",
+					"left": "650",
+					"top": "290",
+					"size": "19"
+				}
+			},
+			{
+				"language": "Tukáno",
+				"family": "Tukáno",
+				"description": "6.250 mil",
+				"style": {
+					"color": "#e58935",
+					"left": "390",
+					"top": "160",
+					"size": "17"
+				}
+			},
+			{
+				"language": "Kayapó",
+				"family": "Jê",
+				"description": "6 mil",
+				"style": {
+					"color": "#477da7",
+					"left": "760",
+					"top": "170",
+					"size": "15"
+				}
+			}
+		]
+	},
+	{
+		"title": "Aba 2",
+		"key": "aba_2",
+		"text_title": "38 línguas indígenas possuem entre mil e 4999 falantes",
+		"info": [
+			{
+				"language": "Baníwa do Içana",
+				"family": "Aruák",
+				"description": "5.000 mil",
+				"style": {
+					"color": "#477da7",
+					"left": "50",
+					"top": "40",
+					"size": "100"
+				}
+			},
+			{
+				"language": "Kaxinawá, Caxinauá",
+				"family": "Páno",
+				"description": "4.500 mil",
+				"style": {
+					"color": "#f0c431",
+					"left": "50",
+					"top": "310",
+					"size": "87"
+				}
+			},
+			{
+				"language": "Yatê",
+				"family": "Yatê",
+				"description": "3.700 mil",
+				"style": {
+					"color": "#4a4a4a",
+					"left": "50",
+					"top": "340",
+					"size": "74"
+				}
+			},
+			{
+				"language": "Timbira",
+				"family": "Jê",
+				"description": "3.500 mil",
+				"style": {
+					"color": "#e58935",
+					"left": "50",
+					"top": "410",
+					"size": "65"
+				}
+			},
+			{
+				"language": "Apurinã",
+				"family": "Aruák",
+				"description": "3.250 mil",
+				"style": {
+					"color": "#569947",
+					"left": "50",
+					"top": "120",
+					"size": "63"
+				}
+			},
+			{
+				"language": "Waiwái",
+				"family": "Karíb",
+				"description": "2.800 mil",
+				"style": {
+					"color": "#9d5519",
+					"left": "50",
+					"top": "70",
+					"size": "50"
+				}
+			},
+			{
+				"language": "Warí",
+				"family": "Txapakúra",
+				"description": "2.700 mil",
+				"style": {
+					"color": "#e16ef4",
+					"left": "50",
+					"top": "200",
+					"size": "48"
+				}
+			},
+			{
+				"language": "Xerénte",
+				"family": "Jê",
+				"description": "2.570 mil",
+				"style": {
+					"color": "#e17070",
+					"left": "50",
+					"top": "90",
+					"size": "45"
+				}
+			},
+			{
+				"language": "Kulína",
+				"family": "Arawá",
+				"description": "2.550 mil",
+				"style": {
+					"color": "#5b4d41",
+					"left": "50",
+					"top": "250",
+					"size": "38"
+				}
+			},
+			{
+				"language": "Tariána",
+				"family": "Aruák",
+				"description": "2.540 mil",
+				"style": {
+					"color": "#d7ae7e",
+					"left": "50",
+					"top": "450",
+					"size": "35"
+				}
+			},
+			{
+				"language": "Karajá",
+				"family": "Karajá",
+				"description": "2.500 mil",
+				"style": {
+					"color": "#ce4045",
+					"left": "50",
+					"top": "400",
+					"size": "33"
+				}
+			},
+			{
+				"language": "Karipúna do Amapá",
+				"family": "Românica",
+				"description": "2.235 mil",
+				"style": {
+					"color": "#acffef",
+					"left": "50",
+					"top": "350",
+					"size": "28"
+				}
+			},
+			{
+				"language": "Krahô",
+				"family": "Jê",
+				"description": "2.200 mil",
+				"style": {
+					"color": "#e9ff70",
+					"left": "50",
+					"top": "240",
+					"size": "22"
+				}
+			},
+			{
+				"language": "Galibí do Uaçá",
+				"family": "Karíb",
+				"description": "2.200 mil",
+				"style": {
+					"color": "#477da7",
+					"left": "50",
+					"top": "290",
+					"size": "19"
+				}
+			},
+			{
+				"language": "Desána",
+				"family": "Tukáno",
+				"description": "2.200 mil",
+				"style": {
+					"color": "#f0c431",
+					"left": "50",
+					"top": "160",
+					"size": "17"
+				}
+			},
+			{
+				"language": "Ramkokamekrã",
+				"family": "Jê",
+				"description": "1.770 mil",
+				"style": {
+					"color": "#4a4a4a",
+					"left": "50",
+					"top": "170",
+					"size": "15"
+				}
+			},
+			{
+				"language": "Kanamarí",
+				"family": "Katukína",
+				"description": "1.700 mil",
+				"style": {
+					"color": "#e58935",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Kadiwéu",
+				"family": "Guaikurú",
+				"description": "1.630 mil",
+				"style": {
+					"color": "#569947",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Kayabí",
+				"family": "Tupí-Guaraní",
+				"description": "1.620 mil",
+				"style": {
+					"color": "#9d5519",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Matsés",
+				"family": "Páno",
+				"description": "1.600 mil",
+				"style": {
+					"color": "#e16ef4",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Apinajé",
+				"family": "Jê",
+				"description": "1.525 mil",
+				"style": {
+					"color": "#e17070",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Cinta-larga",
+				"family": "Mondé",
+				"description": "1.500 mil",
+				"style": {
+					"color": "#5b4d41",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Tembé",
+				"family": "Tupí-Guaraní",
+				"description": "1.430 mil",
+				"style": {
+					"color": "#d7ae7e",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Pirá-tapúya",
+				"family": "Tukáno",
+				"description": "1.430 mil",
+				"style": {
+					"color": "#ce4045",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Boróro",
+				"family": "Boróro",
+				"description": "1.400 mil",
+				"style": {
+					"color": "#acffef",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Paresí",
+				"family": "Aruák",
+				"description": "1.400 mil",
+				"style": {
+					"color": "#e9ff70",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Húpda",
+				"family": "Makú",
+				"description": "1.400 mil",
+				"style": {
+					"color": "#477da7",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Xikrín",
+				"family": "Jê",
+				"description": "1.350 mil",
+				"style": {
+					"color": "#f0c431",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Palikúr",
+				"family": "Aruák",
+				"description": "1.330 mil",
+				"style": {
+					"color": "#4a4a4a",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Maxakalí",
+				"family": "Maxakalí",
+				"description": "1.300 mil",
+				"style": {
+					"color": "#e58935",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Marúbo",
+				"family": "Pano",
+				"description": "1.300 mil",
+				"style": {
+					"color": "#569947",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Javaé",
+				"family": "Karajá",
+				"description": "1.200 mil",
+				"style": {
+					"color": "#9d5519",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Tiriyó",
+				"family": "Karíb",
+				"description": "1.150 mil",
+				"style": {
+					"color": "#e16ef4",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Rikbáktsa",
+				"family": "Rikbáktsa",
+				"description": "1.120 mil",
+				"style": {
+					"color": "#e17070",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Waimirí",
+				"family": "Karíb",
+				"description": "1.120 mil",
+				"style": {
+					"color": "#5b4d41",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Kuripáko",
+				"family": "Aruák",
+				"description": "1.100 mil",
+				"style": {
+					"color": "#d7ae7e",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Paitér",
+				"family": "Mondé",
+				"description": "1.000 mil",
+				"style": {
+					"color": "#ce4045",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Ka’apór",
+				"family": "Tupí-Guaraní",
+				"description": "1.000 mil",
+				"style": {
+					"color": "#acffef",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			}
+		]
+	},
+	{
+		"title": "Aba 3",
+		"key": "aba_3",
+		"text_title": "43 línguas indígenas possuem entre 400 e 999 falantes",
+		"info": [
+			{
+				"language": "Kámpa",
+				"family": "Aruák",
+				"description": "970",
+				"style": {
+					"color": "#477da7",
+					"left": "50",
+					"top": "50",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Maxinéri",
+				"family": "Aruák",
+				"description": "950",
+				"style": {
+					"color": "#f0c431",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Bakairí",
+				"family": "Karíb",
+				"description": "950",
+				"style": {
+					"color": "#4a4a4a",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Xokléng",
+				"family": "Jê",
+				"description": "900",
+				"style": {
+					"color": "#e58935",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Parakanã",
+				"family": "Tupí-Guaraní",
+				"description": "900",
+				"style": {
+					"color": "#569947",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Paumarí",
+				"family": "Arawá",
+				"description": "900",
+				"style": {
+					"color": "#9d5519",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Ingarikó",
+				"family": "Karíb",
+				"description": "900",
+				"style": {
+					"color": "#e16ef4",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Jamamadi",
+				"family": "Arawá",
+				"description": "890",
+				"style": {
+					"color": "#e17070",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Dení",
+				"family": "Arawá",
+				"description": "875",
+				"style": {
+					"color": "#5b4d41",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Miránha",
+				"family": "Bóra",
+				"description": "850",
+				"style": {
+					"color": "#d7ae7e",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Yamináwa",
+				"family": "Páno",
+				"description": "850",
+				"style": {
+					"color": "#ce4045",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Tuyúka",
+				"family": "Tukáno",
+				"description": "830",
+				"style": {
+					"color": "#acffef",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Warekéna",
+				"family": "Aruák",
+				"description": "800",
+				"style": {
+					"color": "#e9ff70",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Wayampí",
+				"family": "Tupí-Guaraní",
+				"description": "750",
+				"style": {
+					"color": "#477da7",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Wanáno",
+				"family": "Tukáno",
+				"description": "750",
+				"style": {
+					"color": "#f0c431",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Chiquito",
+				"family": "Chiquito",
+				"description": "740",
+				"style": {
+					"color": "#4a4a4a",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Krikatí",
+				"family": "Jê",
+				"description": "700",
+				"style": {
+					"color": "#e58935",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Tenharim",
+				"family": "Tupí-Guaraní",
+				"description": "700",
+				"style": {
+					"color": "#569947",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Nambikwára del Sur",
+				"family": "Nambikwára",
+				"description": "700",
+				"style": {
+					"color": "#9d5519",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Hixkaryána",
+				"family": "Karíb",
+				"description": "630",
+				"style": {
+					"color": "#e16ef4",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Xipáya",
+				"family": "Jurúna",
+				"description": "600",
+				"style": {
+					"color": "#e17070",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Nukiní",
+				"family": "Páno",
+				"description": "600",
+				"style": {
+					"color": "#5b4d41",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Taulipáng",
+				"family": "Karíb",
+				"description": "580",
+				"style": {
+					"color": "#d7ae7e",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Tapirapé",
+				"family": "Tupí-Guaraní",
+				"description": "570",
+				"style": {
+					"color": "#ce4045",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Arapáso",
+				"family": "Tukáno",
+				"description": "560",
+				"style": {
+					"color": "#acffef",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Apaniekrá",
+				"family": "Jê",
+				"description": "500",
+				"style": {
+					"color": "#e9ff70",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Kamayurá",
+				"family": "Tupí-Guaraní",
+				"description": "500",
+				"style": {
+					"color": "#477da7",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Kaixána",
+				"family": "?",
+				"description": "500",
+				"style": {
+					"color": "#f0c431",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Kalapálo",
+				"family": "Karíb",
+				"description": "500",
+				"style": {
+					"color": "#4a4a4a",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Kuikúru",
+				"family": "Karíb",
+				"description": "500",
+				"style": {
+					"color": "#e58935",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Yawanáwa",
+				"family": "Páno",
+				"description": "500",
+				"style": {
+					"color": "#569947",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Zoró",
+				"family": "Mondé",
+				"description": "470",
+				"style": {
+					"color": "#9d5519",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Ninám",
+				"family": "Yanomámi",
+				"description": "466",
+				"style": {
+					"color": "#e16ef4",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Sanumá",
+				"family": "Yanomámi",
+				"description": "462",
+				"style": {
+					"color": "#e17070",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Gavião",
+				"family": "Mondé",
+				"description": "460",
+				"style": {
+					"color": "#5b4d41",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Salumã",
+				"family": "Aruák",
+				"description": "450",
+				"style": {
+					"color": "#d7ae7e",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Yekuána",
+				"family": "Karíb",
+				"description": "450",
+				"style": {
+					"color": "#ce4045",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Nambikwára del Valle del Guaporé",
+				"family": "Nambikwára",
+				"description": "450",
+				"style": {
+					"color": "#acffef",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Tuparí",
+				"family": "Tuparí",
+				"description": "430",
+				"style": {
+					"color": "#e9ff70",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Waurá",
+				"family": "Aruák",
+				"description": "400",
+				"style": {
+					"color": "#477da7",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Yuhúp",
+				"family": "Makú",
+				"description": "400",
+				"style": {
+					"color": "#f0c431",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Katukína-Páno",
+				"family": "Páno",
+				"description": "400",
+				"style": {
+					"color": "#4a4a4a",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Poyanáwa",
+				"family": "Páno",
+				"description": "400",
+				"style": {
+					"color": "#e58935",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			}
+		]
+	},
+	{
+		"title": "Aba 4",
+		"key": "aba_4",
+		"text_title": "43 línguas indígenas possuem entre 100 e 399 falantes",
+		"info": [
+			{
+				"language": "Pirahã",
+				"family": "Múra",
+				"description": "390",
+				"style": {
+					"color": "#477da7",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Makuráp",
+				"family": "Tuparí",
+				"description": "380",
+				"style": {
+					"color": "#f0c431",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Asuriní de Tocantins",
+				"family": "Tupí-Guaraní",
+				"description": "380",
+				"style": {
+					"color": "#4a4a4a",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Kubéwa",
+				"family": "Tukáno",
+				"description": "380",
+				"style": {
+					"color": "#e58935",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Jurúna",
+				"family": "Jurúna",
+				"description": "360",
+				"style": {
+					"color": "#569947",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Guató",
+				"family": "Guató",
+				"description": "350",
+				"style": {
+					"color": "#9d5519",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Suyá",
+				"family": "Jê",
+				"description": "350",
+				"style": {
+					"color": "#e16ef4",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Irántxe",
+				"family": "Irántxe",
+				"description": "350",
+				"style": {
+					"color": "#e17070",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Ikpéng",
+				"family": "Karíb",
+				"description": "350",
+				"style": {
+					"color": "#5b4d41",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Araweté",
+				"family": "Tupí-Guaraní",
+				"description": "340",
+				"style": {
+					"color": "#d7ae7e",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Katukína",
+				"family": "Katukína",
+				"description": "340",
+				"style": {
+					"color": "#ce4045",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Xawanáwa",
+				"family": "Páno",
+				"description": "330",
+				"style": {
+					"color": "#acffef",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Karitiána",
+				"family": "Arikém",
+				"description": "320",
+				"style": {
+					"color": "#e9ff70",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Aparaí",
+				"family": "Karíb",
+				"description": "320",
+				"style": {
+					"color": "#477da7",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Kaxararí",
+				"family": "Páno",
+				"description": "320",
+				"style": {
+					"color": "#f0c431",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Panará",
+				"family": "Jê",
+				"description": "300",
+				"style": {
+					"color": "#4a4a4a",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Wayána",
+				"family": "Karíb",
+				"description": "300",
+				"style": {
+					"color": "#e58935",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Nadêb",
+				"family": "Makú",
+				"description": "300",
+				"style": {
+					"color": "#569947",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Nambikwára Kithaulú, Sawantesú y otros",
+				"family": "Nambikwára",
+				"description": "300",
+				"style": {
+					"color": "#9d5519",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Matís",
+				"family": "Páno",
+				"description": "300",
+				"style": {
+					"color": "#e16ef4",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Torá",
+				"family": "Txapakúra",
+				"description": "300",
+				"style": {
+					"color": "#e17070",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Parintintín",
+				"family": "Tupí-Guaraní",
+				"description": "290",
+				"style": {
+					"color": "#5b4d41",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Guajá",
+				"family": "Tupí-Guaraní",
+				"description": "280",
+				"style": {
+					"color": "#d7ae7e",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Apolíma-Arára",
+				"family": "?",
+				"description": "280",
+				"style": {
+					"color": "#ce4045",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Xambioá",
+				"family": "Karajá",
+				"description": "270",
+				"style": {
+					"color": "#acffef",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Arara do Xingu",
+				"family": "Karíb",
+				"description": "270",
+				"style": {
+					"color": "#e9ff70",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Korúbo",
+				"family": "Páno",
+				"description": "250",
+				"style": {
+					"color": "#477da7",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Kontanáwa",
+				"family": "Páno?",
+				"description": "250",
+				"style": {
+					"color": "#f0c431",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Mehináku",
+				"family": "Aruák",
+				"description": "230",
+				"style": {
+					"color": "#4a4a4a",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Kaxuyána",
+				"family": "Karíb",
+				"description": "230",
+				"style": {
+					"color": "#e58935",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Yawalapití",
+				"family": "Aruák",
+				"description": "220",
+				"style": {
+					"color": "#569947",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Amawáka",
+				"family": "Páno",
+				"description": "220",
+				"style": {
+					"color": "#9d5519",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Krenák",
+				"family": "Krenák",
+				"description": "200",
+				"style": {
+					"color": "#e16ef4",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Amanayé",
+				"family": "Tupí-Guaraní",
+				"description": "190",
+				"style": {
+					"color": "#e17070",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Apiaká",
+				"family": "Tupí-Guaraní",
+				"description": "190",
+				"style": {
+					"color": "#5b4d41",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Suruí de Tocantins",
+				"family": "Tupí-Guaraní",
+				"description": "185",
+				"style": {
+					"color": "#d7ae7e",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Káro",
+				"family": "Ramaráma",
+				"description": "184",
+				"style": {
+					"color": "#ce4045",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Anambé",
+				"family": "Tupí-Guaraní",
+				"description": "180",
+				"style": {
+					"color": "#acffef",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Zoé",
+				"family": "Tupí-Guaraní",
+				"description": "180",
+				"style": {
+					"color": "#e9ff70",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Jarawára",
+				"family": "Arawá",
+				"description": "180",
+				"style": {
+					"color": "#477da7",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Jabuti",
+				"family": "Jabutí",
+				"description": "170",
+				"style": {
+					"color": "#f0c431",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Awetí",
+				"family": "Awetí",
+				"description": "160",
+				"style": {
+					"color": "#4a4a4a",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Aikanã",
+				"family": "Aikanã",
+				"description": "160",
+				"style": {
+					"color": "#e58935",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Zuruahá",
+				"family": "Arawá",
+				"description": "150",
+				"style": {
+					"color": "#569947",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Trumái",
+				"family": "Trumái",
+				"description": "150",
+				"style": {
+					"color": "#9d5519",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Urupá",
+				"family": "Txapakúra",
+				"description": "150",
+				"style": {
+					"color": "#e16ef4",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Katuéna",
+				"family": "Karíb",
+				"description": "140",
+				"style": {
+					"color": "#e17070",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Kuruáya",
+				"family": "Mundurukú",
+				"description": "130",
+				"style": {
+					"color": "#5b4d41",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Asuriní de Xingu",
+				"family": "Tupí-Guaraní",
+				"description": "125",
+				"style": {
+					"color": "#d7ae7e",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Nahukwá",
+				"family": "Karíb",
+				"description": "125",
+				"style": {
+					"color": "#ce4045",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Kulíno",
+				"family": "Páno",
+				"description": "125",
+				"style": {
+					"color": "#acffef",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Matipú",
+				"family": "Karíb",
+				"description": "110",
+				"style": {
+					"color": "#e9ff70",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			}
+		]
+	},
+	{
+		"title": "Aba 5",
+		"key": "aba_5",
+		"text_title": "44 línguas indígenas possuem menos de 100 falantes",
+		"info": [
+			{
+				"language": "Wayoró",
+				"family": "Tuparí",
+				"description": "100",
+				"style": {
+					"color": "#477da7",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Uru-eu-wau-wáu",
+				"family": "Tupí-Guaraní",
+				"description": "100",
+				"style": {
+					"color": "#f0c431",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Banawá",
+				"family": "Arawá",
+				"description": "100",
+				"style": {
+					"color": "#4a4a4a",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Txunhuã-djapá",
+				"family": "Katukína",
+				"description": "100",
+				"style": {
+					"color": "#e58935",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Mamaindê",
+				"family": "Nambikwára",
+				"description": "100",
+				"style": {
+					"color": "#569947",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Sararé",
+				"family": "Nambikwára",
+				"description": "100",
+				"style": {
+					"color": "#9d5519",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Kanoê",
+				"family": "Kanoê",
+				"description": "95",
+				"style": {
+					"color": "#e16ef4",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Dâw",
+				"family": "Makú",
+				"description": "95",
+				"style": {
+					"color": "#e17070",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Amondáwa",
+				"family": "Tupí-Guaraní",
+				"description": "90",
+				"style": {
+					"color": "#5b4d41",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Diahói",
+				"family": "Tupí-Guaraní",
+				"description": "90",
+				"style": {
+					"color": "#d7ae7e",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Mynky",
+				"family": "Irántxe",
+				"description": "90",
+				"style": {
+					"color": "#ce4045",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Patamóna",
+				"family": "Karíb",
+				"description": "90",
+				"style": {
+					"color": "#acffef",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Nagarotú",
+				"family": "Nambikwára",
+				"description": "90",
+				"style": {
+					"color": "#e9ff70",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Mekém",
+				"family": "Tuparí",
+				"description": "85",
+				"style": {
+					"color": "#477da7",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Mirití-tapúya",
+				"family": "Tukáno",
+				"description": "75",
+				"style": {
+					"color": "#f0c431",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Galibí do Oiapoque",
+				"family": "Karíb",
+				"description": "70",
+				"style": {
+					"color": "#4a4a4a",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Siriána",
+				"family": "Tukáno",
+				"description": "70",
+				"style": {
+					"color": "#e58935",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Karapanã",
+				"family": "Tukáno",
+				"description": "65",
+				"style": {
+					"color": "#569947",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Puruborá",
+				"family": "Puruborá",
+				"description": "62",
+				"style": {
+					"color": "#9d5519",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Tapayúna",
+				"family": "Jê",
+				"description": "60",
+				"style": {
+					"color": "#e16ef4",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Ofayé",
+				"family": "Ofayé",
+				"description": "60",
+				"style": {
+					"color": "#e17070",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Aruá",
+				"family": "Mondé",
+				"description": "60",
+				"style": {
+					"color": "#5b4d41",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Xetá",
+				"family": "Tupí-Guaraní",
+				"description": "60",
+				"style": {
+					"color": "#d7ae7e",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Orowín",
+				"family": "Txapakúra",
+				"description": "60",
+				"style": {
+					"color": "#ce4045",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Arara do Beiradão",
+				"family": "Mondé",
+				"description": "57",
+				"style": {
+					"color": "#acffef",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Kujubim",
+				"family": "Txapakúra",
+				"description": "55",
+				"style": {
+					"color": "#e9ff70",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Mundúka",
+				"family": "Nambikwára",
+				"description": "50",
+				"style": {
+					"color": "#477da7",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Nambikwára del Pequizal",
+				"family": "Nambikwára",
+				"description": "50",
+				"style": {
+					"color": "#f0c431",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Tawandê",
+				"family": "Nambikwára",
+				"description": "40",
+				"style": {
+					"color": "#4a4a4a",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Chamacoco",
+				"family": "Samuko",
+				"description": "40",
+				"style": {
+					"color": "#e58935",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Barasána",
+				"family": "Tukáno",
+				"description": "35",
+				"style": {
+					"color": "#569947",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Makúna",
+				"family": "Tukáno",
+				"description": "35",
+				"style": {
+					"color": "#9d5519",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Arikapú",
+				"family": "Jabutí",
+				"description": "30",
+				"style": {
+					"color": "#e16ef4",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Kwazá",
+				"family": "Kwazá",
+				"description": "30",
+				"style": {
+					"color": "#e17070",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Latundê",
+				"family": "Nambikwára",
+				"description": "20",
+				"style": {
+					"color": "#5b4d41",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Bará",
+				"family": "Tukáno",
+				"description": "20",
+				"style": {
+					"color": "#d7ae7e",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Avá-Canoeiro",
+				"family": "Tupí-Guaraní",
+				"description": "16",
+				"style": {
+					"color": "#ce4045",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Sabanê",
+				"family": "Nambikwára",
+				"description": "15",
+				"style": {
+					"color": "#acffef",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Karipúna",
+				"family": "Tupí-Guaraní",
+				"description": "14",
+				"style": {
+					"color": "#e9ff70",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Akuntsú",
+				"family": "Tuparí",
+				"description": "6",
+				"style": {
+					"color": "#477da7",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Júma",
+				"family": "Tupí-Guaraní",
+				"description": "4",
+				"style": {
+					"color": "#f0c431",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Aurê-Aurá",
+				"family": "Tupí-Guaraní",
+				"description": "2",
+				"style": {
+					"color": "#4a4a4a",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Máku",
+				"family": "isolada",
+				"description": "1",
+				"style": {
+					"color": "#e58935",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			},
+			{
+				"language": "Lakondê",
+				"family": "Nambikwára",
+				"description": "1",
+				"style": {
+					"color": "#569947",
+					"left": "150",
+					"top": "100",
+					"size": "200"
+				}
+			}
+		]
+	}
+]
