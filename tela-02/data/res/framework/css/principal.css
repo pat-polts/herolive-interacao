@@ -111,12 +111,11 @@ html {
 
 #content{
     display:none;
-    overflow:hidden;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
     width: 1024px;
     height: 768px;
-    position:absolute;
+    position: absolute;
 }
 
 .fw_footer{

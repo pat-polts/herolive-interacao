@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<base href="/tela-04/" />
+	<base href="/tela-02/" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hero Live | Interação com vídeo</title>
@@ -42,8 +42,7 @@
 <!--Java Scripts da Peça -->
 <script src="js/animacoes.js"></script>
 <script src="fw_config.js"></script>
-<script src="js/init.js"></script>
-<script src="js/instrumentos.js"></script>
+<script src="js/init.js"></script> 
 <script src="legenda.js"></script>
 <script src="js/jquery.motio.min.js"></script>
 <!--Java Scripts da Peça -->
@@ -105,7 +104,22 @@
 </div>
 
   <!--</div>-->
+
 	<div id="content"> 
+		<div class="start">
+			<img src="imgs/start-button_placeholder.png" />
+		</div>
+		<div class="interacao">
+			<div class="close">
+				<img src="imgs/close-button.png" />
+			</div>
+			<div class="grafico" id="grafico-1" style="display: none;">
+				<img src="imgs/grafico-1.png" />
+			</div>
+			<div class="grafico" id="grafico-2" style="display: none;">
+				<img src="imgs/grafico-2.png" />
+			</div>
+		</div>
 		<video id="video" width="1024" height="768"></video>
 		<audio id="audio"></audio>
 		<div class="tempo-do-video">
@@ -114,41 +128,16 @@
 			<div>Total time : <span id="totalTime">0</span></div>
 		</div>
 		<div id="tab-abas">	
-			<p>Animação instrumentos exemplo </p>
-			<div class="instrumentos">
-
-				<div id="fagote">
-					<div class="sprite"></div>
-				</div>
-
-				<div id="viola">
-					<div class="sprite"></div>
-				</div>
-
-				<div id="contrabaixo">
-					<div class="sprite"></div>
-				</div>
-
-				<audio id="fagote">
-					<source src="data/audios/fagote.mp3" type="audio/mpeg" > 
-					Your browser does not support the audio element.
-				</audio>
-
-				<audio id="viola"> 
-					<source src="data/audios/viola.mp3" type="audio/mpeg"> 
-					Your browser does not support the audio element.
-				</audio>
-
-				<audio id="contrabaixo"> 
-					<source src="data/audios/contrabaixo.mp3" type="audio/mpeg">
-					Your browser does not support the audio element.
-				</audio>
-			
-			</div>
 		</div>
-	</div> 
+
+	</div>
+		
+</div> 
 	<script> 
 		$(function(){
+
+			$(".interacao").hide();
+			$(".grafico-1").hide();
 
 			var $current = $("#currentTime"),
 				$video = $("#content"),
@@ -176,14 +165,51 @@
 				});
 			});
 
+			$(".start").on("click", function(e){
+				e.preventDefault();
+				// $(function(){
+				// 	$current.html($video.find('video').get(0).load());
+				// 	$current.html($video.find('video').get(0).play());
+				// })
+
+				$(".interacao").show();
+				setInterval(function(){
+					var sTime = $current.html(),
+						fTime = $total.html();
+					$current.html($video.find('video').get(0).currentTime);
+					$total.html($video.find('video').get(0).duration);
+				// 	if(sTime == fTime)
+				// 		$("#content").addClass("abas-ativa") 
+
+					var timeRounded = Math.round(sTime);	
+					console.log(timeRounded);
+					switch(true){
+						case (timeRounded <= 40) :
+							$(".grafico").hide();
+							$("#grafico-1").show();
+						break;
+						case (timeRounded >= 41) :
+							$(".grafico").hide(); 
+							$("#grafico-2").show();
+						break; 
+
+					}
+					
+				},500);
+
+			});
+			$(".close").on("click", function(e){
+				e.preventDefault();
+				$('.interacao').hide();
+			});
 
 			$("#fw_btn_iniciar_objeto").on("click", function(){
 				$(function(){
 					$current.html($video.find('video').get(0).load());
 					$current.html($video.find('video').get(0).play());
 				})
-				// $(".instrumentos").hide();
-				// $("video").show();
+	
+				$("video").show();
 				setInterval(function(){
 					var sTime = $current.html(),
 						fTime = $total.html();
@@ -191,12 +217,25 @@
 					$total.html($video.find('video').get(0).duration);
 					if(sTime == fTime)
 						$("#content").addClass("abas-ativa") 
-					// if(Math.round(sTime) == 3){
-					// 	$current.html($video.find('video').get(0).pause());
-					// 	$("video").hide();
-					// 	$(".instrumentos").show();
-					// }
+			
 				},500);
+
+    // $(".close").on("click", function(e){
+    //     e.preventDefault();
+        
+	// 			$(".animation").hide();
+	// 			$(".animation2").hide();
+	// 			$("video").show();
+	// 					$current.html($video.find('video').get(0).play());
+    // });
+
+    // $(".next").on("click", function(e){
+    //     e.preventDefault();
+        
+	// 			$(".animation").hide();
+	// 			$(".animations2").show();
+    // });
+
 			});
 			//funcionalidade de abas
 			$tab_abas

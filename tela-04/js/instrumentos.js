@@ -12,7 +12,7 @@ $(function(){
         var $stage      = $('.instrumentos > div'+div);
         var sprite      = event.target;
 
-        var animation   = new Motio(sprite, {fps: 15, startPaused: true}); 
+        var animation   = new Motio(sprite, {fps: 15, frames: 9, startPaused: true}); 
 
         instrumento.play();
         animation.play();  

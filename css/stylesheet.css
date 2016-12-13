@@ -1,0 +1,20 @@
+.content-box{
+    background: #c00;
+    border: 1px solid #c10;
+    height: 101px;
+    position: absolute;
+    width: 100%;
+    padding-right: 20px;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    top: 103px;
+}
+
+#l{
+    background: url('../imgs/m.png') no-repeat center;
+}
+#h{
+    background: url('../imgs/s.png') no-repeat center;
+}

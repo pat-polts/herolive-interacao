@@ -48,11 +48,16 @@ app.use(
             app.use('/tela-01/games', express.static(path.join(__dirname, '/tela-01/games'))); 
             app.use('/tela-01/js', express.static(path.join(__dirname, '/tela-01/js'))); 
     
+            //Tela 02 src files
+            app.use('/tela-02', express.static(path.join(__dirname, '/tela-02'))); 
+            app.use('/tela-02/css', express.static(path.join(__dirname, '/tela-02/css'))); 
+            app.use('/tela-02/data', express.static(path.join(__dirname, '/tela-02/data')));  
+            app.use('/tela-02/js', express.static(path.join(__dirname, '/tela-02/js'))); 
+    
             //Tela 03 src files
             app.use('/tela-03', express.static(path.join(__dirname, '/tela-03'))); 
             app.use('/tela-03/css', express.static(path.join(__dirname, '/tela-03/css'))); 
-            app.use('/tela-03/data', express.static(path.join(__dirname, '/tela-03/data'))); 
-            app.use('/tela-03/games', express.static(path.join(__dirname, '/tela-03/games'))); 
+            app.use('/tela-03/data', express.static(path.join(__dirname, '/tela-03/data')));  
             app.use('/tela-03/js', express.static(path.join(__dirname, '/tela-03/js'))); 
    
             //Tela 04 src files
@@ -69,6 +74,9 @@ app.use('/', function(req, res){
       case '/tela01' :
          res.sendFile(path.resolve(path.join(__dirname, 'tela-01/index.html') )); 
       break;
+      case '/tela02' :
+         res.sendFile(path.resolve(path.join(__dirname, 'tela-02/index.html') )); 
+      break;
       case '/tela03' :
          res.sendFile(path.resolve(path.join(__dirname, 'tela-03/index.html') )); 
       break;
@@ -78,6 +86,7 @@ app.use('/', function(req, res){
       default :
         res.sendFile(path.resolve(path.join(__dirname, 'index.html') )); 
   }
+  
 });
 // app.use('/tela01', tela1);
 
