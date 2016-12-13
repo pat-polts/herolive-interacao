@@ -45,6 +45,7 @@
 <script src="js/init.js"></script>
 <script src="js/instrumentos.js"></script>
 <script src="legenda.js"></script>
+<script src="js/jquery.motio.min.js"></script>
 <!--Java Scripts da Peça -->
 
 <section id="preloader">
@@ -104,27 +105,7 @@
 </div>
 
   <!--</div>-->
-	<div id="content">
-		<div class="instrumentos">
-
-			<img src="data/imgs/instrumento1-placeholder.png" id="instrumentoA" />
-			<img src="data/imgs/instrumento2-placeholder.png" id="instrumentoB" />
-			<img src="data/imgs/instrumento3-placeholder.png" id="instrumentoC" />
-
-			<audio id="instrumentoA">
-				<source src="data/audios/01_01_f_0001a_AJI5_M17_CD.mp3" type="audio/mpeg" > 
-				Your browser does not support the audio element.
-			</audio>
-			<audio id="instrumentoB"> 
-				<source src="data/audios/01_01_f_0001b_AJI5_M17_CD.mp3" type="audio/mpeg"> 
-				Your browser does not support the audio element.
-			</audio>
-			<audio id="instrumentoC"> 
-				<source src="data/audios/01_01_f_0001c_AJI5_M17_CD.mp3" type="audio/mpeg">
-				Your browser does not support the audio element.
-			</audio>
-		
-		</div>
+	<div id="content"> 
 		<video id="video" width="1024" height="768"></video>
 		<audio id="audio"></audio>
 		<div class="tempo-do-video">
@@ -133,13 +114,41 @@
 			<div>Total time : <span id="totalTime">0</span></div>
 		</div>
 		<div id="tab-abas">	
-			<p>fim!</p>
+			<p>Animação instrumentos exemplo </p>
+			<div class="instrumentos">
+
+				<div id="fagote">
+					<div class="sprite"></div>
+				</div>
+
+				<div id="viola">
+					<div class="sprite"></div>
+				</div>
+
+				<div id="contrabaixo">
+					<div class="sprite"></div>
+				</div>
+
+				<audio id="fagote">
+					<source src="data/audios/fagote.mp3" type="audio/mpeg" > 
+					Your browser does not support the audio element.
+				</audio>
+
+				<audio id="viola"> 
+					<source src="data/audios/viola.mp3" type="audio/mpeg"> 
+					Your browser does not support the audio element.
+				</audio>
+
+				<audio id="contrabaixo"> 
+					<source src="data/audios/contrabaixo.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+			
+			</div>
 		</div>
-	</div>
+	</div> 
 	<script> 
 		$(function(){
-
-			/*cria lista com bolinhas*/
 
 			var $current = $("#currentTime"),
 				$video = $("#content"),
@@ -173,7 +182,8 @@
 					$current.html($video.find('video').get(0).load());
 					$current.html($video.find('video').get(0).play());
 				})
-				$(".instrumentos").hide();
+				// $(".instrumentos").hide();
+				// $("video").show();
 				setInterval(function(){
 					var sTime = $current.html(),
 						fTime = $total.html();
@@ -181,10 +191,11 @@
 					$total.html($video.find('video').get(0).duration);
 					if(sTime == fTime)
 						$("#content").addClass("abas-ativa") 
-					if(Math.round(sTime) == 3){
-						$current.html($video.find('video').get(0).pause());
-						$(".instrumentos").show();
-					}
+					// if(Math.round(sTime) == 3){
+					// 	$current.html($video.find('video').get(0).pause());
+					// 	$("video").hide();
+					// 	$(".instrumentos").show();
+					// }
 				},500);
 			});
 			//funcionalidade de abas

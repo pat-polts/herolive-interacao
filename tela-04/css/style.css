@@ -1,15 +1,40 @@
 
 .instrumentos{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 98%;
+    height: 98%;
     text-align: center;
-    background: #fff;
-    z-index: 1000;
+    background: #fff; 
 }
 
-.instrumentos > img{
+.instrumentos > div{
     float: left;
-    width: calc(100% / 3);
     cursor: pointer;
+    margin: 2em;
+
 }
+.instrumentos #fagote > .sprite{
+        width: 130px;
+        height: 110px;
+        overflow: hidden;
+        
+        /* sprite temporario*/
+        background: url('../data/imgs/tmp_sprite_shoot.png');
+    }
+
+.instrumentos #contrabaixo > .sprite{
+        width: 130px;
+        height: 110px;
+        overflow: hidden;
+        
+        /* sprite temporario*/
+        background: url('../data/imgs/tmp_sprite_melee.png');
+ }
+.instrumentos #viola > .sprite{
+        width: 120px;
+        height: 101px;
+        overflow: hidden;
+
+        /* sprite temporario*/
+        background: url('../data/imgs/tmp_sprite_jump.png');
+    }

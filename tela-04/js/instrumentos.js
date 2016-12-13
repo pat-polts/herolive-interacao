@@ -1,17 +1,31 @@
-$(function(){
-    var playing = false; //
+$(function(){ 
+ 
+    var current = false; 
 
-    $(".instrumentos > img").on("mouseenter mouseleave", function(event){
-                    
-        playing         = !playing;
-        var elId        = '#' + this.id;
-        var instrumento = $('audio'+elId).get(0);
+   console.log($(".instrumentos"));
+    $(".instrumentos > div").bind("mouseenter", function(event){
+        event.preventDefault(); 
+                           
+        var element     = this.id;
+        var div         = '#' + element;
+        var instrumento = $('audio'+div).get(0);
+        var $stage      = $('.instrumentos > div'+div);
+        var sprite      = event.target;
 
-        if(event.type === 'mouseenter'){
-            return !instrumento.play(); 
-        }else{
-            return !instrumento.pause(); 
-        }
+        var animation   = new Motio(sprite, {fps: 15, frames: 9, startPaused: true}); 
+
+        instrumento.play();
+        animation.play();  
+
+            $stage.on("mouseleave", function(e){
+                e.preventDefault(); 
+                instrumento.pause();
+                animation.pause(); 
+            });
+
+        return false; 
                     
     }); 
+
+
 });
