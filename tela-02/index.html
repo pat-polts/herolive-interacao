@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<base href="/tela-04/" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Live | Interação com vídeo</title>
+</head>
+<body>
+
+<!-- Style do Framework -->
+<link rel="stylesheet" href="data/res/framework/css/framework.css">
+<!-- Style do Framework -->
+
+<!--Libs em Java Scripts-->
+
+<script src="data/res/jquery-1.11.2.min.js"></script>
+<script src="data/res/howler.min.js"></script>
+<script src="data/res/prefixfree.min.js"></script>
+<script src="data/res/CSSPlugin.min.js"></script>
+<script src="data/res/jquery.base64.js"></script>
+<script src="data/res/EasePack.js"></script>
+<script src="data/res/TweenLite.js"></script>
+<script src="data/res/TimelineLite.js"></script>
+<script src="data/res/PxLoader.js"></script>
+<script src="data/res/PxLoaderImage.js"></script>
+<!--Libs em Java Scripts-->
+
+
+<!--Java Scripts do Framework -->
+<script src="data/res/framework/framework.js"></script>
+<script src="data/res/framework/preloader.js"></script>
+<!--Java Scripts do Framework -->
+
+<!-- Style da peça -->
+<link rel="stylesheet" href="css/style.css" media="screen" type="text/css"/>
+<link rel="stylesheet" href="css/tab-abas.css" media="screen" type="text/css"/>
+<!-- Style da peça -->
+
+
+<!--Java Scripts da Peça -->
+<script src="js/animacoes.js"></script>
+<script src="fw_config.js"></script>
+<script src="js/init.js"></script>
+<script src="js/instrumentos.js"></script>
+<script src="legenda.js"></script>
+<script src="js/jquery.motio.min.js"></script>
+<!--Java Scripts da Peça -->
+
+<section id="preloader">
+  <div class="wrp">
+  	<div class="bar n1 jumping"></div>
+  	<div class="bar n2 jumping"></div>
+  	<div class="bar n3 jumping"></div>
+  	<div class="bar n4 jumping"></div>
+  	<div class="bar n5 jumping"></div>
+  	<div class="bar n6 jumping"></div>
+  	<div class="bar n7 jumping"></div>
+  	<div class="bar n8 jumping"></div>
+  	<div class="bar n9 jumping"></div>
+  </div>
+	<div id="brand">
+		<div id="bx-1">
+			<div class="white-box"></div>
+			<div class="content-box">
+				<div id="h"></div>
+			</div>
+			<div class="white-box2"></div>
+		</div>
+
+		<div id="bx-2">
+			<div class="white-box"></div>
+			<div class="content-box">
+				<div id="l"></div>
+			</div>
+			<div class="white-box2"></div>
+		</div>
+	</div>
+	<div id="counter">
+		0%
+	</div>
+</section>
+
+<div id="fw_fundo">
+
+	<div id="fw_preloader">
+
+		<div id="fw_capa">
+			<div class="fw_footer">
+				As imagens deste conteúdo são representações meramente ilustrativas, fora de escala e/ou com cores-fantasia.
+			</div>
+		    <div id="fw_titulo">
+		        <h1>
+		            Hero Live<br />Interação com vídeo
+		        </h1>
+		        <div id="fw_btn_iniciar_objeto">
+		            <span class="arrow_right"></span>
+		        </div>
+
+		    </div>
+		</div>
+
+	</div>
+</div>
+
+  <!--</div>-->
+	<div id="content"> 
+		<video id="video" width="1024" height="768"></video>
+		<audio id="audio"></audio>
+		<div class="tempo-do-video">
+			<div class="time">Funcionou : <span>ativado</span></div>
+			<div>Current Time : <span  id="currentTime">0</span></div>
+			<div>Total time : <span id="totalTime">0</span></div>
+		</div>
+		<div id="tab-abas">	
+			<p>Animação instrumentos exemplo </p>
+			<div class="instrumentos">
+
+				<div id="fagote">
+					<div class="sprite"></div>
+				</div>
+
+				<div id="viola">
+					<div class="sprite"></div>
+				</div>
+
+				<div id="contrabaixo">
+					<div class="sprite"></div>
+				</div>
+
+				<audio id="fagote">
+					<source src="data/audios/fagote.mp3" type="audio/mpeg" > 
+					Your browser does not support the audio element.
+				</audio>
+
+				<audio id="viola"> 
+					<source src="data/audios/viola.mp3" type="audio/mpeg"> 
+					Your browser does not support the audio element.
+				</audio>
+
+				<audio id="contrabaixo"> 
+					<source src="data/audios/contrabaixo.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+			
+			</div>
+		</div>
+	</div> 
+	<script> 
+		$(function(){
+
+			var $current = $("#currentTime"),
+				$video = $("#content"),
+				$total = $("#totalTime"),
+				$tab_abas = $("#tab-abas"),
+				$nav_abas = $(".abas-nav"),
+				$box = $(".info-linguas"),
+				cor_aba = $(".abas-nav li:first").find("a").attr("class");
+
+			$.ajax({
+				url: "js/description.json",
+				dataType: "json"
+			})
+			.done(function (data) {
+				// cria a listagem de todos os circulos
+				$.each(data, function(i, obj) {
+					var key =  obj.key;
+					// $box.append('<h3 data-title="' + obj.title + '" data-key="' + key + '" class="desc-' + key + '">' + obj.text_title + '</h3><div class="rjmosaic group ' + key + '" />');
+
+					var $list = $box.find("." + key);
+					// $.each(obj.info, function(idx, info) {
+					// 	var css = info.style;
+					// 	$list.append('<div class="rjmosaic__item" style="width: '+ css.size +'px; height: '+ css.size +'px;"><span style="background-color: '+ css.color +';" /><div class="info"><i class="close" /><strong>Língua:</strong> ' + info.language + '<br /><strong>N° de falantes:</strong> ' + info.description + '<br /><strong>Família linguística:</strong> ' + info.family + '</div></div>');
+					// });
+				});
+			});
+
+
+			$("#fw_btn_iniciar_objeto").on("click", function(){
+				$(function(){
+					$current.html($video.find('video').get(0).load());
+					$current.html($video.find('video').get(0).play());
+				})
+				// $(".instrumentos").hide();
+				// $("video").show();
+				setInterval(function(){
+					var sTime = $current.html(),
+						fTime = $total.html();
+					$current.html($video.find('video').get(0).currentTime);
+					$total.html($video.find('video').get(0).duration);
+					if(sTime == fTime)
+						$("#content").addClass("abas-ativa") 
+					// if(Math.round(sTime) == 3){
+					// 	$current.html($video.find('video').get(0).pause());
+					// 	$("video").hide();
+					// 	$(".instrumentos").show();
+					// }
+				},500);
+			});
+			//funcionalidade de abas
+			$tab_abas
+				.addClass(cor_aba);
+			$nav_abas
+				.find("li:first").addClass("ativo");
+
+			$nav_abas
+				.on("click", "a", function(){
+			//
+			});
+			
+			$(".zoom .aumentar").on("click", function(){
+				//
+			});
+			
+			$(".zoom .diminuir").on("click", function(){
+			//
+			});
+
+	  	});
+		$(window).load(function(){
+			// $(".info-linguas div.aba_1")
+			// 	.addClass("ativado");
+
+			// var descText = $(".info-linguas .desc-aba_1").text();
+			// $("#tab-abas p.descricao").text(descText);
+
+			// $(".info-linguas .rjmosaic div")
+			// 	.on("click", "span", function(){
+			// 		$("div.open").removeClass("open");
+			// 		$(this).parent().addClass("open");
+			// });
+
+			// $(".info-linguas .rjmosaic div")
+			// 	.on("click",".close", function(){
+			// 		$("div.open").removeClass("open");
+			// });
+		})
+	</script>
+	<script src="js/jquery.rjmosaic.js"></script>
+</body>
+</html>

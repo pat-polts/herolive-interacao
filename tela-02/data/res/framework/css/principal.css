@@ -1,0 +1,144 @@
+/***************** base start *************/
+
+@font-face {
+    font-family: 'averageregular';
+    src: url('../../../fonts/average-regular-webfont.eot');
+    src: url('../../../fonts/average-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../fonts/average-regular-webfont.woff2') format('woff2'),
+         url('../../../fonts/average-regular-webfont.woff') format('woff'),
+         url('../../../fonts/average-regular-webfont.ttf') format('truetype'),
+         url('../../../fonts/average-regular-webfont.svg#averageregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'interstateregular';
+    src: url('../../../fonts/interstate_light-webfont.eot');
+    src: url('../../../fonts/interstate_light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../../fonts/interstate_light-webfont.woff2') format('woff2'),
+    url('../../../fonts/interstate_light-webfont.woff') format('woff'),
+    url('../../../fonts/interstate_light-webfont.ttf') format('truetype'),
+    url('../../../fonts/interstate_light-webfont.svg#interstateregular') format('svg');
+    font-weight: bolder;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'interstateregularitalic';
+    src: url('../../../fonts/interstate_regular_italic-webfont.eot');
+    src: url('../../../fonts/interstate_regular_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../fonts/interstate_regular_italic-webfont.woff2') format('woff2'),
+         url('../../../fonts/interstate_regular_italic-webfont.woff') format('woff'),
+         url('../../../fonts/interstate_regular_italic-webfont.ttf') format('truetype'),
+         url('../../../fonts/interstate_regular_italic-webfont.svg#interstateregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Interstate-ExtraLight';
+  src: url('../../../fonts/Interstate-ExtraLight.eot?#iefix') format('embedded-opentype'),  url('../../../fonts/Interstate-ExtraLight.woff') format('woff'), url('../../../fonts/Interstate-ExtraLight.ttf')  format('truetype'), url('../../../fonts/Interstate-ExtraLight.svg#Interstate-ExtraLight') format('svg');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Interstate-ExtraLightItalic';
+  src: url('../../../fonts/Interstate-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),  url('../../../fonts/Interstate-ExtraLightItalic.woff') format('woff'), url('../../../fonts/Interstate-ExtraLightItalic.ttf')  format('truetype'), url('../../../fonts/Interstate-ExtraLightItalic.svg#Interstate-ExtraLightItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Interstate-Bold';
+  src: url('../../../fonts/Interstate-Bold.eot?#iefix') format('embedded-opentype'),  url('../../../fonts/Interstate-Bold.woff') format('woff'), url('../../../fonts/Interstate-Bold.ttf')  format('truetype'), url('../../../fonts/Interstate-Bold.svg#Interstate-Bold') format('svg');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Interstate-BoldItalic';
+  src: url('../../../fonts/Interstate-BoldItalic.eot?#iefix') format('embedded-opentype'),  url('../../../fonts/Interstate-BoldItalic.woff') format('woff'), url('../../../fonts/Interstate-BoldItalic.ttf')  format('truetype'), url('../../../fonts/Interstate-BoldItalic.svg#Interstate-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'interstatelightitalic';
+    src: url('../../../fonts/interstate_light_italic-webfont.eot');
+    src: url('../../../fonts/interstate_light_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../fonts/interstate_light_italic-webfont.woff2') format('woff2'),
+         url('../../../fonts/interstate_light_italic-webfont.woff') format('woff'),
+         url('../../../fonts/interstate_light_italic-webfont.ttf') format('truetype'),
+         url('../../../fonts/interstate_light_italic-webfont.svg#interstateregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+body{
+    font-family: interstateregular;
+}
+
+i {
+    font-family: interstatelightitalic;
+    
+}
+
+video {
+    background: black;
+    position:absolute;
+}
+
+
+html {
+    width: 0px !important;
+    height: 0px !important;
+    background-color: white!important;
+}
+
+#content{
+    display:none;
+    overflow:hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    width: 1024px;
+    height: 768px;
+    position:absolute;
+}
+
+.fw_footer{
+    bottom: 1%;
+    width:100%;
+    position:absolute;
+    font-family: 'interstateregular';
+    color: gray;
+    font-size: 16px;
+}
+
+
+#fw_fundo {
+    overflow:hidden;
+    display:block;
+    width:1024px;
+    height:768px;
+    background:#FFFFFF;
+    position:absolute;
+
+}
+
+.decimal {
+  font-family: 'averageregular';
+}
