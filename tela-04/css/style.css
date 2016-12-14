@@ -1,40 +1,106 @@
 
 .instrumentos{
     position: absolute;
-    width: 98%;
-    height: 98%;
+    width: 100%;
+    height: 100%;
     text-align: center;
     background: #fff; 
+    top: 0;
+    left: 0;
+    background: url('../data/imgs/layout.png');
+    background-size: 100% 100%;
 }
 
 .instrumentos > div{
-    float: left;
-    cursor: pointer;
-    margin: 2em;
-
+    cursor: pointer; 
+    overflow: hidden;
 }
-.instrumentos #fagote > .sprite{
-        width: 130px;
-        height: 110px;
-        overflow: hidden;
-        
-        /* sprite temporario*/
-        background: url('../data/imgs/tmp_sprite_shoot.png');
+.instrumentos > .desc{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background: #878787;
+    opacity: 0.5;
+    border-radius: 12px; 
+    color: #fff;
+    padding: 1em;
+        -webkit-border-radius: 12px; 
+        -moz-border-radius: 12px;   
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        filter: alpha(opacity=50);
+        -moz-opacity:0.5;
+        -khtml-opacity: 0.5;
+}
+    .instrumentos > .desc > p{
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: capitalize;
     }
-
-.instrumentos #contrabaixo > .sprite{
-        width: 130px;
-        height: 110px;
-        overflow: hidden;
-        
-        /* sprite temporario*/
-        background: url('../data/imgs/tmp_sprite_melee.png');
+.instrumentos #violino > .sprite{ 
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    background: url('../data/imgs/violino.png') top center;
+    background-size: 100% 100%;
+    top: 67%;
+    left: 24%;
+    transition: all .2s ease-in-out;
+    transform: rotate(-24deg);
  }
-.instrumentos #viola > .sprite{
-        width: 120px;
-        height: 101px;
-        overflow: hidden;
-
-        /* sprite temporario*/
-        background: url('../data/imgs/tmp_sprite_jump.png');
+    .instrumentos #violino > .sprite:hover{
+        transform: scale(1.4) rotate(-24deg); 
+    }
+.instrumentos #contrabaixo > .sprite{ 
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    background: url('../data/imgs/Contrabaixo.png') top center;
+    background-size: 100% 100%;
+    top: 52%;
+    left: 66%;
+    transition: all .2s ease-in-out;
+    transform: rotate(-24deg);
+ }
+    .instrumentos #contrabaixo > .sprite:hover{
+        transform: scale(1.4) rotate(-24deg); 
+    }
+.instrumentos #tromba > .sprite{ 
+    width: 18%;
+    height: 18%;
+    position: absolute;
+    background: url('../data/imgs/trompa.png') top center;
+    background-size: 100% 100%;
+    top: 18%;
+    left:32%;
+    transition: all .2s ease-in-out;
+    transform: rotate(109deg);
+}
+    .instrumentos #tromba > .sprite:hover{
+        transform: scale(1.4) rotate(109deg); 
+    }
+.instrumentos #timpano > .sprite{ 
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    background: url('../data/imgs/timpani.png') top center;
+    background-size: 100% 100%;
+    top: 63%;
+    left: -8%;
+    transform: rotate(-49deg);
+}
+    .instrumentos #timpano > .sprite:hover{
+        transform: scale(1.4) rotate(-49deg); 
+    }
+.instrumentos #clarinete > .sprite{ 
+    width: 40%;
+    height: 18%;
+    position: absolute;
+    background: url('../data/imgs/Clarone.png') top center;
+    background-size: 100% 100%;
+    top: 32%;
+    left: 32%;
+    transform: rotate(12deg);
+}
+    .instrumentos #clarinete > .sprite:hover{
+        transform: scale(1.4) rotate(12deg); 
     }
