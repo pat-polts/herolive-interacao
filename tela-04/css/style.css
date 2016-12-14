@@ -63,15 +63,6 @@
     .instrumentos #contrabaixo > .sprite:hover{
         transform: scale(0.20) rotate(-24deg); 
     }
-.instrumentos #trompa > .sprite{ 
-    top: -37%;
-    left: 6%;
-    transition: all .2s ease-in-out;
-    transform: scale(0.11) rotate(109deg);
-}
-    .instrumentos #trompa > .sprite:hover{
-        transform: scale(0.20) rotate(109deg); 
-    }
 .instrumentos #timpano > .sprite{ 
     top: 43%;
     left: -16%;
@@ -79,14 +70,6 @@
 }
     .instrumentos #timpano > .sprite:hover{
         transform: scale(0.20) rotate(-49deg); 
-    }
-.instrumentos #clarinete > .sprite{ 
-    top: 7%;
-    left: 39%;
-    transform: scale(0.25) rotate(15deg);
-}
-    .instrumentos #clarinete > .sprite:hover{
-        transform: scale(0.35) rotate(15deg); 
     }
 .instrumentos #arpa > .sprite{ 
     top: 49%;
@@ -112,27 +95,71 @@
     .instrumentos #xylophone > .sprite:hover{
         transform: scale(0.18) rotate(0deg); 
     }
+.instrumentos #clarinete > .sprite{ 
+    top: 9%;
+    left: 10%;
+    transform: scale(0.14) rotate(-51deg);
+}
+    .instrumentos #clarinete > .sprite:hover{
+        transform: scale(0.24) rotate(-51deg); 
+    }
 .instrumentos #fagote > .sprite{ 
-    top: -9%;
-    left: 40%;
-    transform: scale(0.18) rotate(5deg);
+    top: 19%;
+    left: 19%;
+    transform: scale(0.17) rotate(83deg);
 }
     .instrumentos #fagote > .sprite:hover{
-        transform: scale(0.28) rotate(5deg); 
+        transform: scale(0.27) rotate(83deg); 
     }
 .instrumentos #corneIngles > .sprite{ 
-    top: -16%;
-    left: 24%;
-    transform: scale(0.15) rotate(-35deg);
+    top: -11%;
+    left: -17%;
+    transform: scale(0.11) rotate(-75deg);
 }
     .instrumentos #corneIngles > .sprite:hover{
-        transform: scale(0.25) rotate(-35deg); 
+        transform: scale(0.21) rotate(-75deg); 
     }
 .instrumentos #flautim > .sprite{ 
-    top: -9%;
-    left: 15%;
-    transform: scale(0.12) rotate(7deg);
+    top: 0%;
+    left: -7%;
+    transform: scale(0.12) rotate(-69deg);
 }
     .instrumentos #flautim > .sprite:hover{
-        transform: scale(0.2) rotate(7deg); 
+        transform: scale(0.22) rotate(-69deg); 
+    }
+.instrumentos #violoncello > .sprite{ 
+    top: 3%;
+    left: 47%;
+    transition: all .2s ease-in-out;
+    transform: scale(0.12) rotate(-17deg);
+}
+    .instrumentos #violoncello > .sprite:hover{
+        transform: scale(0.22) rotate(-17deg); 
+    }
+.instrumentos #tuba > .sprite{ 
+    top: -10%;
+    left: -9%;
+    transition: all .2s ease-in-out;
+    transform: scale(0.14) rotate(-3deg);
+}
+    .instrumentos #tuba > .sprite:hover{
+        transform: scale(0.24) rotate(-3deg); 
+    }
+.instrumentos #trompa > .sprite{ 
+    top: -22%;
+    left: -17%;
+    transition: all .2s ease-in-out;
+    transform: scale(0.12) rotate(159deg);
+}
+    .instrumentos #trompa > .sprite:hover{
+        transform: scale(0.22) rotate(158deg); 
+    }
+.instrumentos #caixa > .sprite{ 
+    top: 16%;
+    left: -30%;
+    transition: all .2s ease-in-out;
+    transform: scale(0.1) rotate(-124deg);
+}
+    .instrumentos #caixa > .sprite:hover{
+        transform: scale(0.2) rotate(-124deg); 
     }

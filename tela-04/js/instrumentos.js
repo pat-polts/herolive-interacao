@@ -46,6 +46,18 @@ $(function(){
         flautim: {
             nome: 'flautim',
             tipo: 'madeiras'
+        },
+        violoncello: {
+            nome: 'violoncello',
+            tipo: 'cordas'
+        },
+        tuba: {
+            nome: 'tuba',
+            tipo: 'metais'
+        },
+        caixa: {
+            nome: 'caixa',
+            tipo: 'metais'
         }
     };  
     
