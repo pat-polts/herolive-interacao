@@ -117,23 +117,29 @@
 			<div class="instrumentos">
 				<div class="desc"></div>	
 				<div id="violino">
-					<div class="sprite"></div>
+					<div class="sprite">
+						<img src="data/imgs/violino.png" alt="violino" />
+					</div>
 					<audio>
 						<source src="data/audios/violino.mp3" type="audio/mpeg" > 
 						Your browser does not support the audio element.
 					</audio>
 				</div>
 
-				<div id="tromba">
-					<div class="sprite"></div>
+				<div id="trompa">
+					<div class="sprite">
+						<img src="data/imgs/trompa.png" alt="trompa" />
+					</div>
 					<audio> 
-						<source src="data/audios/tromba.mp3" type="audio/mpeg"> 
+						<source src="data/audios/trompa.mp3" type="audio/mpeg"> 
 						Your browser does not support the audio element.
 					</audio>
 				</div>
 
 				<div id="contrabaixo">
-					<div class="sprite"></div>
+					<div class="sprite">
+						<img src="data/imgs/Contrabaixo.png" alt="contrabaixo" />
+					</div>
 					<audio> 
 						<source src="data/audios/contrabaixo.mp3" type="audio/mpeg">
 						Your browser does not support the audio element.
@@ -141,7 +147,9 @@
 				</div>
 
 				<div id="timpano">
-					<div class="sprite"></div>
+					<div class="sprite">
+						<img src="data/imgs/timpani.png" alt="timpano" />
+					</div>
 					<audio> 
 						<source src="data/audios/timpanos.mp3" type="audio/mpeg">
 						Your browser does not support the audio element.
@@ -149,13 +157,74 @@
 				</div>
 
 				<div id="clarinete">
-					<div class="sprite"></div>
+					<div class="sprite">
+						<img src="data/imgs/Clarone.png" alt="clarinete" />
+					</div>
 					<audio> 
 						<source src="data/audios/clarinete.mp3" type="audio/mpeg">
 						Your browser does not support the audio element.
 					</audio>
 				</div>
 
+				<div id="arpa">
+					<div class="sprite">
+						<img src="data/imgs/arpa.png" alt="harpa" />
+					</div>
+					<audio> 
+						<source src="data/audios/clarinete.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+				</div>
+
+				<div id="gongo">
+					<div class="sprite">
+						<img src="data/imgs/gongo.png" alt="gongo" />
+					</div>
+					<audio> 
+						<source src="data/audios/clarinete.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+				</div>
+
+				<div id="xylophone">
+					<div class="sprite">
+						<img src="data/imgs/Xylophone.png" alt="xylophone" />
+					</div>
+					<audio> 
+						<source src="data/audios/clarinete.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+				</div>
+
+				<div id="fagote">
+					<div class="sprite">
+						<img src="data/imgs/fagote.png" alt="fagote" />
+					</div>
+					<audio> 
+						<source src="data/audios/fagote.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+				</div>
+
+				<div id="corneIngles">
+					<div class="sprite">
+						<img src="data/imgs/corne-ingles.png" alt="fagote" />
+					</div>
+					<audio> 
+						<source src="data/audios/fagote.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+				</div>
+
+				<div id="flautim">
+					<div class="sprite">
+						<img src="data/imgs/corne-flautim.png" alt="fagote" />
+					</div>
+					<audio> 
+						<!--<source src="data/audios/flautim.mp3" type="audio/mpeg">-->
+						Your browser does not support the audio element.
+					</audio>
+				</div>
 
 			
 			</div>
@@ -163,7 +232,7 @@
 	</div> 
 	<script> 
 		$(function(){
-
+			$("#tab-abas").hide();
 			var $current = $("#currentTime"),
 				$video = $("#content"),
 				$total = $("#totalTime"),
@@ -172,45 +241,27 @@
 				$box = $(".info-linguas"),
 				cor_aba = $(".abas-nav li:first").find("a").attr("class");
 
-			$.ajax({
-				url: "js/description.json",
-				dataType: "json"
-			})
-			.done(function (data) {
-				// cria a listagem de todos os circulos
-				$.each(data, function(i, obj) {
-					var key =  obj.key;
-					// $box.append('<h3 data-title="' + obj.title + '" data-key="' + key + '" class="desc-' + key + '">' + obj.text_title + '</h3><div class="rjmosaic group ' + key + '" />');
 
-					var $list = $box.find("." + key);
-					// $.each(obj.info, function(idx, info) {
-					// 	var css = info.style;
-					// 	$list.append('<div class="rjmosaic__item" style="width: '+ css.size +'px; height: '+ css.size +'px;"><span style="background-color: '+ css.color +';" /><div class="info"><i class="close" /><strong>Língua:</strong> ' + info.language + '<br /><strong>N° de falantes:</strong> ' + info.description + '<br /><strong>Família linguística:</strong> ' + info.family + '</div></div>');
-					// });
-				});
-			});
-
-
-			$("#fw_btn_iniciar_objeto").on("click", function(){
+			$("#fw_btn_iniciar_objeto").on("click", function(){ 
+				
 				$(function(){
 					$current.html($video.find('video').get(0).load());
 					$current.html($video.find('video').get(0).play());
 				})
-				// $(".instrumentos").hide();
-				// $("video").show();
 				setInterval(function(){
 					var sTime = $current.html(),
 						fTime = $total.html();
 					$current.html($video.find('video').get(0).currentTime);
 					$total.html($video.find('video').get(0).duration);
-					if(sTime == fTime)
-						$("#content").addClass("abas-ativa") 
-					// if(Math.round(sTime) == 3){
-					// 	$current.html($video.find('video').get(0).pause());
-					// 	$("video").hide();
-					// 	$(".instrumentos").show();
-					// }
+					if(sTime == fTime){    
+						
+						$("#content").addClass("abas-ativa"); 
+					}
 				},500);
+					$current.html($video.find('video').get(0).currentTime);
+					$total.html($video.find('video').get(0).duration);
+						// console.log(Math.round(sTime) );
+						console.log(Math.round($total.html($video.find('video').get(0).duration)) );
 			});
 			//funcionalidade de abas
 			$tab_abas
@@ -232,24 +283,7 @@
 			});
 
 	  	});
-		$(window).load(function(){
-			// $(".info-linguas div.aba_1")
-			// 	.addClass("ativado");
 
-			// var descText = $(".info-linguas .desc-aba_1").text();
-			// $("#tab-abas p.descricao").text(descText);
-
-			// $(".info-linguas .rjmosaic div")
-			// 	.on("click", "span", function(){
-			// 		$("div.open").removeClass("open");
-			// 		$(this).parent().addClass("open");
-			// });
-
-			// $(".info-linguas .rjmosaic div")
-			// 	.on("click",".close", function(){
-			// 		$("div.open").removeClass("open");
-			// });
-		})
 	</script>
 	<script src="js/jquery.rjmosaic.js"></script>
 </body>

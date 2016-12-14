@@ -348,6 +348,7 @@ var oeds = {
             //$('#fw_btn_menu_legenda').remove()
              if(oeds.legendaAPI._isLegendaAtivada){
                 $("#legenda").css('display','none');    
+			    $("#tab-abas").show();
             }
             // callback();
         });

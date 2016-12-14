@@ -11,7 +11,7 @@ $(function(){
             nome: 'contrabaixo',
             tipo: 'cordas'
         },
-        tromba: {
+        trompa: {
             nome: 'trompa',
             tipo: 'metais'
         },
@@ -22,11 +22,35 @@ $(function(){
         timpano: {
             nome: 'tímpanos',
             tipo: 'percussão'
+        },
+        arpa: {
+            nome: 'harpa',
+            tipo: 'outros'
+        },
+        gongo: {
+            nome: 'tan-tan ou gongo',
+            tipo: 'percussão'
+        },
+        xylophone: {
+            nome: 'Xylophone',
+            tipo: 'percussão'
+        },
+        fagote: {
+            nome: 'fagote',
+            tipo: 'madeiras'
+        },
+        corneIngles: {
+            nome: 'corne-inglês',
+            tipo: 'madeiras'
+        },
+        flautim: {
+            nome: 'flautim',
+            tipo: 'madeiras'
         }
     };  
     
     $(".instrumentos > div").bind("mouseenter", function(event){
-        event.preventDefault(); 
+        // event.defaultPrevented(); 
                       
         var element     = this.id;
         var div         = '#' + element;
@@ -45,11 +69,14 @@ $(function(){
         // animation.play();  
 
             $stage.on("mouseleave", function(e){
-                e.preventDefault(); 
+                // e.defaultPrevented(); 
                 instrumento.pause();
+                instrumento.currentTime = 0;
                 $('.desc').html('<p></p>');  
                 $('.desc').hide();
                 // animation.pause(); 
+
+                return false; 
             });
 
         return false; 
