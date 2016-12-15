@@ -57,7 +57,27 @@ $(function(){
         },
         caixa: {
             nome: 'caixa',
+            tipo: 'percussão'
+        },
+        bombo: {
+            nome: 'bombo',
+            tipo: 'percussão'
+        },
+        piano: {
+            nome: 'piano',
+            tipo: 'outros'
+        },
+        trombone: {
+            nome: 'trombone',
             tipo: 'metais'
+        },
+        clarone: {
+            nome: 'clarone',
+            tipo: 'madeiras'
+        },
+        triangulo: {
+            nome: 'triangulo',
+            tipo: 'percussão'
         }
     };  
     

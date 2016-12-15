@@ -40,7 +40,9 @@
     width: auto;
     height: auto;
     position: absolute; 
+    padding: 1%;
 }
+.sprite:hover{ z-index: 60; }
 .sprite > img{
     width: 100%;
     height: auto;
@@ -64,12 +66,12 @@
         transform: scale(0.20) rotate(-24deg); 
     }
 .instrumentos #timpano > .sprite{ 
-    top: 43%;
-    left: -16%;
-    transform: scale(0.11) rotate(-49deg);
+    top: 39%;
+    left: -12%;
+    transform: scale(0.11) rotate(-9deg);
 }
     .instrumentos #timpano > .sprite:hover{
-        transform: scale(0.20) rotate(-49deg); 
+        transform: scale(0.20) rotate(-9deg); 
     }
 .instrumentos #arpa > .sprite{ 
     top: 49%;
@@ -88,12 +90,12 @@
         transform: scale(0.2) rotate(0deg); 
     }
 .instrumentos #xylophone > .sprite{ 
-    top: 3%;
-    left: -38%;
-    transform: scale(0.11) rotate(0deg);
+    top: 7%;
+    left: -39%;
+    transform: scale(0.11) rotate(15deg);
 }
     .instrumentos #xylophone > .sprite:hover{
-        transform: scale(0.18) rotate(0deg); 
+        transform: scale(0.21) rotate(15deg); 
     }
 .instrumentos #clarinete > .sprite{ 
     top: 9%;
@@ -104,16 +106,16 @@
         transform: scale(0.24) rotate(-51deg); 
     }
 .instrumentos #fagote > .sprite{ 
-    top: 19%;
-    left: 19%;
-    transform: scale(0.17) rotate(83deg);
+    top: 20%;
+    left: 21%;
+    transform: scale(0.17) rotate(85deg);
 }
     .instrumentos #fagote > .sprite:hover{
-        transform: scale(0.27) rotate(83deg); 
+        transform: scale(0.27) rotate(85deg); 
     }
 .instrumentos #corneIngles > .sprite{ 
     top: -11%;
-    left: -17%;
+    left: -19%;
     transform: scale(0.11) rotate(-75deg);
 }
     .instrumentos #corneIngles > .sprite:hover{
@@ -155,11 +157,56 @@
         transform: scale(0.22) rotate(158deg); 
     }
 .instrumentos #caixa > .sprite{ 
+    top: 2%;
+    left: -17%;
+    transition: all .2s ease-in-out;
+    transform: scale(0.09) rotate(-215deg);
+}
+    .instrumentos #caixa > .sprite:hover{
+        transform: scale(0.19) rotate(-215deg); 
+    }
+.instrumentos #bombo > .sprite{ 
+    top: 14%;
+    left: -46%;
+    transition: all .2s ease-in-out;
+    transform: scale(0.1) rotate(0deg);
+}
+    .instrumentos #bombo > .sprite:hover{
+        transform: scale(0.2) rotate(0deg); 
+    }
+.instrumentos #piano > .sprite{ 
+    top: 7%;
+    left: 53%;
+    transition: all .2s ease-in-out;
+    transform: scale(0.15) rotate(10deg);
+}
+    .instrumentos #piano > .sprite:hover{
+        transform: scale(0.25) rotate(10deg); 
+    }
+.instrumentos #trombone > .sprite{ 
+    top: 16%;
+    left: 37%;
+    transition: all .2s ease-in-out;
+    transform: scale(0.15) rotate(125deg);
+}
+    .instrumentos #trombone > .sprite:hover{
+        transform: scale(0.25) rotate(125deg); 
+    }
+.instrumentos #clarone > .sprite{ 
     top: 16%;
     left: -30%;
     transition: all .2s ease-in-out;
-    transform: scale(0.1) rotate(-124deg);
+    transform: scale(0.1) rotate(0deg);
 }
-    .instrumentos #caixa > .sprite:hover{
-        transform: scale(0.2) rotate(-124deg); 
+    .instrumentos #clarone > .sprite:hover{
+        transform: scale(0.2) rotate(0deg); 
+    }
+.instrumentos #triangulo > .sprite{ 
+    top: 16%;
+    left: -30%;
+    transition: all .2s ease-in-out;
+    transform: scale(0.1) rotate(0deg);
+}
+    .instrumentos #triangulo > .sprite:hover{
+        transform: scale(0.2) rotate(0deg); 
     }
