@@ -157,8 +157,8 @@
         transform: scale(0.22) rotate(158deg); 
     }
 .instrumentos #caixa > .sprite{ 
-    top: 2%;
-    left: -17%;
+    top: 36%;
+    left: -6%;
     transition: all .2s ease-in-out;
     transform: scale(0.09) rotate(-215deg);
 }
@@ -166,7 +166,7 @@
         transform: scale(0.19) rotate(-215deg); 
     }
 .instrumentos #bombo > .sprite{ 
-    top: 14%;
+    top: 10%;
     left: -46%;
     transition: all .2s ease-in-out;
     transform: scale(0.1) rotate(0deg);
@@ -184,8 +184,8 @@
         transform: scale(0.25) rotate(10deg); 
     }
 .instrumentos #trombone > .sprite{ 
-    top: 16%;
-    left: 37%;
+    top: 12%;
+    left: -43%;
     transition: all .2s ease-in-out;
     transform: scale(0.15) rotate(125deg);
 }
