@@ -217,7 +217,7 @@
     transform: scale(0.1) rotate(-36deg);
 }
     .instrumentos #sinos > .sprite:hover{
-        transform: scale(0.0175) rotate(-36deg); 
+        transform: scale(0.175) rotate(-36deg); 
     }
 .instrumentos #trompete > .sprite{ 
     top: -5%;
