@@ -45,6 +45,7 @@
 <script src="js/init.js"></script> 
 <script src="legenda.js"></script>
 <script src="js/jquery.motio.min.js"></script>
+<script src="js/interacao.js"></script>
 <!--Java Scripts da Peça -->
 
 <section id="preloader">
@@ -106,18 +107,28 @@
   <!--</div>-->
 
 	<div id="content"> 
-		<div class="start">
-			<img src="imgs/start-button_placeholder.png" />
+		<div class="btn" id="start">
+			<img src="imgs/start-button.png" />
 		</div>
+		<div class="btn" id="start2">
+			<img src="imgs/start-button2.png" />
+		</div>
+		<div class="btn" id="start3">
+			<img src="imgs/start-button3.png" />
+		</div>
+
 		<div class="interacao">
 			<div class="close">
 				<img src="imgs/close-button.png" />
 			</div>
 			<div class="grafico" id="grafico-1" style="display: none;">
-				<img src="imgs/grafico-1.png" />
+				<img src="imgs/grafico-1.jpg" />
 			</div>
 			<div class="grafico" id="grafico-2" style="display: none;">
 				<img src="imgs/grafico-2.png" />
+			</div>
+			<div class="grafico" id="grafico-3" style="display: none;">
+				<img src="imgs/grafico-3.png" />
 			</div>
 		</div>
 		<video id="video" width="1024" height="768"></video>
@@ -137,8 +148,10 @@
 		$(function(){
 
 			$("#tab-abas").hide();
-			$(".interacao").hide();
-			$(".grafico-1").hide();
+			$(".interacao").hide(); 
+			$("#start").hide();
+			$("#start2").hide();
+			$("#start3").hide();
 
 			var $current = $("#currentTime"),
 				$video = $("#content"),
@@ -166,51 +179,12 @@
 				});
 			});
 
-			$(".start").on("click", function(e){
-				e.preventDefault();
-				// $(function(){
-				// 	$current.html($video.find('video').get(0).load());
-				// 	$current.html($video.find('video').get(0).play());
-				// })
-
-				$(".interacao").show();
-				setInterval(function(){
-					var sTime = $current.html(),
-						fTime = $total.html();
-					$current.html($video.find('video').get(0).currentTime);
-					$total.html($video.find('video').get(0).duration);
-				// 	if(sTime == fTime)
-				// 		$("#content").addClass("abas-ativa") 
-
-					var timeRounded = Math.round(sTime);	
-					console.log(timeRounded);
-					switch(true){
-						case (timeRounded <= 40) :
-							$(".grafico").hide();
-							$("#grafico-1").show();
-						break;
-						case (timeRounded >= 41) :
-							$(".grafico").hide(); 
-							$("#grafico-2").show();
-						break; 
-
-					}
-					
-				},500);
-
-			});
-			$(".close").on("click", function(e){
-				e.preventDefault();
-				$('.interacao').hide();
-			});
-
 			$("#fw_btn_iniciar_objeto").on("click", function(){
 				$(function(){
 					$current.html($video.find('video').get(0).load());
 					$current.html($video.find('video').get(0).play());
 				})
 	
-				$("video").show();
 				setInterval(function(){
 					var sTime = $current.html(),
 						fTime = $total.html();
@@ -218,7 +192,27 @@
 					$total.html($video.find('video').get(0).duration);
 					if(sTime == fTime)
 						$("#content").addClass("abas-ativa") 
-			
+							var timeRounded = Math.round(sTime);	
+					switch(true){
+						case (timeRounded < 95) :
+							$("#start").show();
+							$("#start2").hide(); 
+							$("#start3").hide();
+						break;
+						case (timeRounded >= 95 && timeRounded < 180) :
+							$("#start2").show();
+							$("#start").hide();
+							$("#start3").hide();
+							console.log(timeRounded);
+						break; 
+						case  (timeRounded >= 180) :
+							$("#start").hide();
+							$("#start2").hide();
+							$("#start3").show();
+							console.log(timeRounded);
+						break; 
+
+					}
 				},500);
 
     // $(".close").on("click", function(e){

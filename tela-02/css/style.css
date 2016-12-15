@@ -13,13 +13,13 @@
 
 .interacao > .grafico{
     position: relative;  
-    width: 100%;
-    height: 100%;
+    width: 1024px;
+    height: 768px;
     text-align: left;
 
 }
     .interacao > .grafico > img{
-        width: 1024px;
+        width: 100%;
         height: auto;
     }
 
@@ -27,17 +27,21 @@
     position: absolute;
     width: auto;
     height: auto; 
-    right: 24%;
+    right: 20%;
     top: 1%;
     z-index: 56;
     cursor: pointer;
 }   
-.start{
+.btn{
     position: absolute;
-    width: auto;
+    width: 300px;
     height: auto;  
     top: 1%;
     right: 1%;
     z-index: 50;
-    cursor: pointer;
+    cursor: pointer; 
+}
+.btn > img{
+    width: 100%;
+    height: 100%;
 }
