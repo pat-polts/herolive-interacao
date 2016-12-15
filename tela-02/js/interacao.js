@@ -1,69 +1,36 @@
 $(function(){ 
 
 			$("#start").on("click", function(e){
-				$(".interacao").hide();
+				$(".grafico").hide();
 				$(".interacao").show();
 
-				setInterval(function(){
-					var currentT = Math.round($('#content').find('video').get(0).currentTime);
-					if(currentT >=95){
-						$("#grafico-1").hide();
-						$("#grafico-2").show();
-					}else if(currentT >=182){
-						$("#grafico-2").hide();
-						$("#grafico-3").show();
-
-					}else{
-						$("#grafico-1").show();
-					}
-
-				},500);
- 
+				$('#content').find('video').get(0).pause();
 				
-		});
-
+				$("#grafico-1").show(); 
+ 				
+			});
 
 			$("#start2").on("click", function(e){
-				$(".interacao").hide(); 
-				$(".interacao").show(); 
-
-				setInterval(function(){
-					var currentT =  Math.round($('#content').find('video').get(0).currentTime);
-					if(currentT < 95){
-						$("#grafico-2").hide();
-						$("#grafico-1").show();
-					}else if(currentT >= 180){
-						$("#grafico-2").hide();
-						$("#grafico-3").show();
-
-					}else{
-						$("#grafico-2").show();
-					}
-
-				},500);
-			});
-			$("#start3").on("click", function(e){
-				$(".interacao").hide();
+				$(".grafico").hide();
 				$(".interacao").show();
 
-				setInterval(function(){
-					var currentT =  Math.round($('#content').find('video').get(0).currentTime);
-					if(currentT < 95){
-						$("#grafico-3").hide();
-						$("#grafico-1").show();
-					}else if(currentT >= 95 && currentT <= 179){
-						$("#grafico-3").hide();
-						$("#grafico-2").show();
-
-					}else{
-						$("#grafico-3").show();
-					}
-
-				},500);
-
+				$('#content').find('video').get(0).pause();
+				
+				$("#grafico-2").show(); 
 			});
+
+			$("#start3").on("click", function(e){
+				$(".grafico").hide();
+				$(".interacao").show();
+
+				$('#content').find('video').get(0).pause();
+				
+				$("#grafico-3").show(); 
+			});
+
 			$(".close").on("click", function(e){
 			 	$('.interacao').hide();
+				$('#content').find('video').get(0).play();
 			});
 
 });

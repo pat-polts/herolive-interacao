@@ -10,7 +10,7 @@
     margin-right:10%;
     height: 75px;
     width: 75px;
-    background: #000!important;
+    background: #cf181d!important;
 }
 #fw_btn_iniciar_objeto:hover{
     opacity: 0.6;
@@ -38,7 +38,7 @@
     top:35px;
     width:1024px;
     position:absolute;
-    margin-top:28%;
+    margin-top: 29%;
 }
 #fw_capa  h1 {
     position :relative;
@@ -47,7 +47,7 @@
     display:inline-block;
     max-width: 75%;
     width: auto;
-    top:-35px;
+    top:-30px;
     vertical-align: -webkit-baseline-middle;
     vertical-align: middle;
     margin-right:3%;
@@ -60,7 +60,7 @@
 #preloader {
     width: 1024px;
     height: 768px;
-    background-color: #000!important;
+    background-color: #cf181d!important;
     position: absolute;
     z-index: 3;
 }
@@ -338,7 +338,7 @@
     font-size: 16px;
     color: #fff;
     text-align: center;
-    top:454px;
+    top: 454px;
     left: 490px;
     position: absolute;
     font-family: 'interstateregular', sans-serif;
@@ -378,19 +378,24 @@
     -moz-transform-origin: center;
     -o-transform-origin: center;
     top: -50px;
+    padding: 0px; 
 }
 #bx-1{
     width: 50%;
+    padding: 0px; 
+    margin-right: 5%;
 }
 
 #bx-2{
     left: 50%;
     width: 50%;
+    padding: 0px; 
+    margin-left: 5%;
 }
 
 .content-box{
     background: #c00;
-    border: 1px solid #c10;
+    border: 1px solid #fff;
     height: 101px;
     position: absolute;
     width: 100%;
