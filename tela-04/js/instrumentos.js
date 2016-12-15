@@ -78,6 +78,14 @@ $(function(){
         triangulo: {
             nome: 'triangulo',
             tipo: 'percussão'
+        },
+        sinos: {
+            nome: 'sinos',
+            tipo: 'percussão'
+        },
+        trompete: {
+            nome: 'trompete',
+            tipo: 'metais'
         }
     };  
     
