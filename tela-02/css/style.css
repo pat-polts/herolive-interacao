@@ -15,16 +15,18 @@ overflow: hidden;
     overflow: hidden;
 }
 
-.interacao > .grafico{
+.grafico{
     position: relative;  
     width: 1024px;
     height: 768px;
     text-align: left;
 
 }
-    .interacao > .grafico > img{
+ .grafico > img{
         width: 100%;
         height: auto;
+        transform: scale(1.15);
+        margin-top: 8%;
     }
 
 .close{
@@ -40,10 +42,20 @@ overflow: hidden;
     position: absolute;
     width: 300px;
     height: auto;  
-    top: 1%;
-    left: 1%;
     z-index: 50;
     cursor: pointer; 
+    top: 1%;
+    left: 1%;
+}  
+ 
+#end{
+    position: absolute;
+    width: 300px;
+    height: auto;  
+    z-index: 50;
+    cursor: pointer; 
+    bottom: 1%;
+    left: 32%;
 }
 .btn > img{
     width: 100%;

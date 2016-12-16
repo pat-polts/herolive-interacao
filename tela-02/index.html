@@ -113,7 +113,7 @@
 		<div class="btn" id="start2">
 			<img src="imgs/start-button2.png" />
 		</div>
-		<div class="btn" id="start3">
+		<div class="btn" id="start3" style="display: none;">
 			<img src="imgs/start-button3.png" />
 		</div>
 
@@ -139,6 +139,13 @@
 			<div>Total time : <span id="totalTime">0</span></div>
 		</div>
 		<div id="tab-abas">	
+			<div class="grafico" id="grafico-final" >
+				<img src="imgs/grafico_final.png" />
+			</div>
+			<div id="end">
+				<img src="imgs/ver_novamente.png" />
+			</div>
+
 		</div>
 
 	</div>
@@ -149,9 +156,9 @@
 
 			$("#tab-abas").hide();
 			$(".interacao").hide(); 
-			$("#start").hide();
-			$("#start2").hide();
-			$("#start3").hide();
+			$(".btn").hide();
+			// $("#start2").hide();
+			// $("#start3").hide();
 
 			var $current = $("#currentTime"),
 				$video = $("#content"),
@@ -193,6 +200,7 @@
 					if(sTime == fTime)
 						$("#content").addClass("abas-ativa") 
 							var timeRounded = Math.round(sTime);	
+							var totalRounded = Math.round( $video.find('video').get(0).duration );
 					switch(true){
 						case (timeRounded < 95) :
 							$("#start").show();
@@ -202,21 +210,21 @@
 						case (timeRounded >= 95 && timeRounded < 180) :
 							$("#start2").show();
 							$("#start").hide();
-							$("#start3").hide();
-							console.log(timeRounded);
+							$("#start3").hide(); 
 						break; 
 						case  (timeRounded >= 180) :
 							$("#start").hide();
 							$("#start2").hide();
-							$("#start3").show();
-							console.log(timeRounded);
-						break; 
-						default :
-							$("#start").hide();
-							$("#start2").hide();
-							$("#start3").hide();
+							$("#start3").show(); 
+
+							console.log(totalRounded);
+						break;  
 
 
+					}
+					if(timeRounded === totalRounded){
+						console.log(totalRounded);
+						$('.btn').hide(); 
 					}
 				},500);
 

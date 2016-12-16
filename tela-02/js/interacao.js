@@ -33,4 +33,23 @@ $(function(){
 				$('#content').find('video').get(0).play();
 			});
 
+			$("#end").on("click", function(e){
+				$(".grafico").hide();
+				$(".interacao").hide();
+			    $("#end").hide();  
+			    $("#tab-abas").hide();
+			    $("#start").show();
+           		$("#video-control").css('display','block');
+                $("#legenda").css('display','block'); 
+                $(".fw_btn_menu").show(); 
+
+				$('#content').find('video').get(0).currentTime = 0;
+				$('#content').find('video').get(0).play();
+			});
+
+			$(".close").on("click", function(e){
+			 	$('.interacao').hide();
+				$('#content').find('video').get(0).play();
+			});
+
 });
