@@ -349,7 +349,7 @@ var oeds = {
                 $("#legenda").css('display','none');  
 			    $("#tab-abas").show();  
             }
-            callback();
+            // callback();
         });
 
         this._mediaChannel.on('timeupdate',function(){
