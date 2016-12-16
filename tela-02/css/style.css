@@ -41,7 +41,7 @@ overflow: hidden;
     width: 300px;
     height: auto;  
     top: 1%;
-    right: 1%;
+    left: 1%;
     z-index: 50;
     cursor: pointer; 
 }
