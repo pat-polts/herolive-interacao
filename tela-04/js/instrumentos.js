@@ -86,6 +86,10 @@ $(function(){
         trompete: {
             nome: 'trompete',
             tipo: 'metais'
+        },
+        viola: {
+            nome: 'viola',
+            tipo: 'cordas'
         }
     };  
     
