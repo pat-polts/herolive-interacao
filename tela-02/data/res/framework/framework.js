@@ -687,9 +687,6 @@ var oeds = {
                 //'<li class="item_menu"><a class="fw_btn_inicio" onclick="location.reload();"><i></i>INÍCIO</a></li>' +
                 '<li class="item_menu" onclick="location.reload();"><a class="fw_btn_inicio"><i></i>INÍCIO</a></li>' +
                 volumeMenuIcon +
-                //'<li class="item_menu"><a class="fw_btn_audio" onclick="oeds.volumeOnOff()"><i></i>ÁUDIO</a></li>' +
-                '<li class="item_menu"><a class="fw_btn_tela_cheia" onclick="oeds.goFullScreen()"><i></i>TELA CHEIA</a></li>' +
-                '<li id="fw_btn_menu_legenda" class="item_menu" onclick="oeds.legendaAPI.ligaDesligaLegenda();"><a class="fw_btn_menu_legenda"><i></i></a></li>' +
                 //'<li id="fw_btn_menu_idioma" class="item_menu"><a class="fw_btn_menu_idioma" onclick="oeds._mostrarIdiomas()"><i></i>LEGENDAS</a></li>'  +
                 //'<li id="lista_de_idiomas">'+
                 '<ul>' +

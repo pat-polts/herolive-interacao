@@ -1,4 +1,6 @@
-
+body{
+ overflow: hidden;   
+}
 .instrumentos{
     position: absolute;
     width: 100%;
