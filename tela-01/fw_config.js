@@ -331,7 +331,7 @@ var fwConfig= {
                     'data/audios/tela_principal01.ogg',
                     'data/audios/tela_principal01.m4a',
                     'games/pacmanv3/Powerpill_v2.wav',
-                    'games/pacmanv3/Theme.mp3',
+                    'games/pacmanv3/Theme.wav',
                     'games/pacmanv3/Waka_v1.wav',
                     'games/pacmanv3/Die.wav'
                 ],
