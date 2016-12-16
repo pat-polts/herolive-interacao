@@ -309,6 +309,10 @@ var fwConfig= {
             'data/res/framework/imgs/hl_logo_pequeno.png',
             'data/res/framework/imgs/h.png',
             'data/res/framework/imgs/l.png',
+            'games/pacmanv3/20161010_tela_game-04.png',
+            'games/pacmanv3/20161010_tela_game-04_jogar_novamente.png',
+            'games/pacmanv3/20161010_tela_game_gameover-03.png',
+            'games/pacmanv3/botao_jogar-01.png'
         ],
         medias:[
             {
@@ -316,7 +320,11 @@ var fwConfig= {
                 sources:[
                     'data/audios/tela_principal01.mp3',
                     'data/audios/tela_principal01.ogg',
-                    'data/audios/tela_principal01.m4a'
+                    'data/audios/tela_principal01.m4a',
+                    'games/pacmanv3/Powerpill_v2.wav',
+                    'games/pacmanv3/Theme.wav',
+                    'games/pacmanv3/Waka_v1.wav',
+                    'games/pacmanv3/Die.wav'
                 ],
                 classe: 'audio'
             },
