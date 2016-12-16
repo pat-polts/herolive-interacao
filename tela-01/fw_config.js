@@ -298,8 +298,6 @@ var fwConfig= {
             'data/res/framework/imgs/btn_sem_audio_hover.png',
             'data/res/framework/imgs/btn_sem_legenda.png',
             'data/res/framework/imgs/btn_sem_legenda_hover.png',
-            'data/res/framework/imgs/btn_tela_cheia_m.png',
-            'data/res/framework/imgs/btn_tela_cheia_off_m.png',
             'data/res/framework/imgs/fw_ico_volume.png',
             'data/res/framework/imgs/ico_menu_legenda.png',
             'data/res/framework/imgs/pause.png',
@@ -312,7 +310,18 @@ var fwConfig= {
             'games/pacmanv3/20161010_tela_game-04.png',
             'games/pacmanv3/20161010_tela_game-04_jogar_novamente.png',
             'games/pacmanv3/20161010_tela_game_gameover-03.png',
-            'games/pacmanv3/botao_jogar-01.png'
+            'games/pacmanv3/botao_jogar-01.png',
+            'games/pacmanv3/controle_down-02.png',
+            'games/pacmanv3/controle_left-02.png',
+            'games/pacmanv3/controle_right-02.png',
+            'games/pacmanv3/controle_up-02.png',
+            'games/pacmanv3/intro-01.png',
+            'games/pacmanv3/linha1.png',
+            'games/pacmanv3/placar-02.png',
+            'games/pacmanv3/sprite_00000.png',
+            'games/pacmanv3/sprite_00001.png',
+            'games/pacmanv3/sprite_00002.png'
+      
         ],
         medias:[
             {
