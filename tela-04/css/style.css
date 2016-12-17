@@ -185,6 +185,15 @@ body{
     .instrumentos #piano > .sprite:hover{
         transform: scale(0.25) rotate(10deg); 
     }
+.instrumentos #celesta > .sprite{ 
+    top: 27%;
+    left: 67%;
+    transition: all .2s ease-in-out;
+    transform: scale(0.2) rotate(10deg);
+}
+    .instrumentos #celesta > .sprite:hover{
+        transform: scale(0.3) rotate(10deg); 
+    }
 .instrumentos #trombone > .sprite{ 
     top: 14%;
     left: 36%;

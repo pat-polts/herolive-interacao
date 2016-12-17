@@ -90,6 +90,10 @@ $(function(){
         viola: {
             nome: 'viola',
             tipo: 'cordas'
+        },
+        celesta: {
+            nome: 'celesta',
+            tipo: 'outros'
         }
     };  
     
