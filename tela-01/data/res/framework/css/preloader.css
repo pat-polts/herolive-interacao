@@ -346,8 +346,8 @@
 
 #brand{
     position: absolute;
-    width: 96px;
-    height: 101px;
+    width: 120px;
+    height: 96px;
     top: 314px;
     left: 466px;
     display: none; 
@@ -383,23 +383,24 @@
 #bx-1{
     width: 50%;
     padding: 0px; 
-    margin-right: 5%;
+    /*margin-right: 5%;*/
 }
 
 #bx-2{
     left: 50%;
     width: 50%;
     padding: 0px; 
-    margin-left: 5%;
+    /*margin-left: 5%;*/
 }
 
 .content-box{
-    background: #c00;
+    background: #cc0010;
     border: 1px solid #fff;
     height: 101px;
     position: absolute;
     width: 100%;
-    padding-right: 20px;
+    /*padding: 15%;*/
+    margin-right: 10%;
     transform: rotateX(0deg);
     -webkit-transform: rotateX(0deg);
     -moz-transform: rotateX(0deg);
