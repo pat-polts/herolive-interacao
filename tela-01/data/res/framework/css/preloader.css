@@ -346,8 +346,8 @@
 
 #brand{
     position: absolute;
-    width: 120px;
-    height: 96px;
+    width: 126px;
+    height: 130px;
     top: 314px;
     left: 466px;
     display: none; 
@@ -421,11 +421,13 @@
     background: url('../imgs/m.png') no-repeat center;
     width: 100%;
     height: 100%;
+    padding: 0px;
 }
 #h{
     background: url('../imgs/s.png') no-repeat center;
     width: 100%;
     height: 100%;
+    padding: 0px;
 }
 #bx-1 .content-box img{
     left:3px;
