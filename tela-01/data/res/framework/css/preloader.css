@@ -378,6 +378,7 @@
     -moz-transform-origin: center;
     -o-transform-origin: center;
     top: -50px;
+    margin: 0px;
     padding: 0px; 
 }
 #bx-1{
@@ -400,7 +401,7 @@
     position: absolute;
     width: 100%;
     /*padding: 15%;*/
-    margin-right: 10%;
+    /*margin-right: 10%;*/
     transform: rotateX(0deg);
     -webkit-transform: rotateX(0deg);
     -moz-transform: rotateX(0deg);
@@ -418,9 +419,13 @@
 
 #l{
     background: url('../imgs/m.png') no-repeat center;
+    width: 100%;
+    height: 100%;
 }
 #h{
     background: url('../imgs/s.png') no-repeat center;
+    width: 100%;
+    height: 100%;
 }
 #bx-1 .content-box img{
     left:3px;
